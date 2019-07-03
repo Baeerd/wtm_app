@@ -113,8 +113,8 @@ Ext.application({
 
         }
         // cxapp.sgjtsteel.com:30011
-        // rootUrl = 'http://cxapp.sgjtsteel.com:30011/';
-        rootUrl = 'http://10.88.248.40:9001/jtlg-app';
+        rootUrl = 'http://cxapp.sgjtsteel.com:30011/';
+        // rootUrl = 'http://10.88.248.40:9001/jtlg-app';
         console.log('rootUrl = '+rootUrl);
         //rootUrl = http://10.4.55.204:7001/mes-wtm-app
 
