@@ -1,0 +1,106 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "RootCard",
+        "id": "rootCard",
+        "layout": "card"
+    },
+    "designerId": "5ffed180-dc59-46d8-be10-bc858321ab23",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "7a887b4c-a1ca-439b-a7f9-c8f23ce52ac3",
+            "masterInstanceId": "9072446d-4a5a-4e48-b866-2e1f4f081025"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "401a73ff-675b-4d76-a10e-e1c28118e0b5",
+            "masterInstanceId": "3677e7e4-7c53-4c55-91ee-65a214e2f7ef"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "782082fb-5293-4a88-ab61-8963e8fda1d6",
+            "masterInstanceId": "a4d21718-4a48-49d5-86bd-c0dce593b892"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "6649f200-0252-4b02-b151-031a70659807",
+            "masterInstanceId": "c2ef3aab-d0b8-4658-ae8b-e4a39a9353cd"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "aca831a0-5d64-4418-949f-990cf505a281",
+            "masterInstanceId": "c5cb51eb-6630-4d92-92ae-d68052e3415c"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "345ed248-ad21-45c8-ab8f-d3f4ae144b33",
+            "masterInstanceId": "21938a02-2a5a-4e1c-a1f0-49c5b4eb898f"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "6558f6cc-1907-4921-8f95-f0ef1468af03",
+            "masterInstanceId": "d4d74a2e-9777-4e55-8290-3323e61197ce"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "376ccffc-94a6-48e1-8cf4-dedf6699a96d",
+            "masterInstanceId": "3f402206-6668-4111-ae5f-ec79196077ba"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "ca5c4f2d-67a9-4b19-835e-ed1c6833d657",
+            "masterInstanceId": "8f50313f-495a-4714-b5aa-47de951c89be"
+        }
+    ]
+}

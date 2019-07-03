@@ -1,0 +1,158 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TargetSelectModel",
+        "idProperty": null
+    },
+    "designerId": "4402bcf6-4fec-43ac-aaa7-5448aab5f8b0",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "slotSid",
+                "type": "int"
+            },
+            "designerId": "035651fa-dbbe-4044-b0aa-a465f2fd5e32"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "slotId",
+                "type": "string"
+            },
+            "designerId": "e684369e-1876-4ba8-901b-c447e2018015"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "warehouseName",
+                "type": "string"
+            },
+            "designerId": "9f713c9b-e13a-45bb-915a-2e4d891a6d18"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "hallName",
+                "type": "string"
+            },
+            "designerId": "fbd9275a-c560-431b-954c-eed1e376964d"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "zoneName",
+                "type": "string"
+            },
+            "designerId": "6afe5587-8bd0-442d-9369-e87581cda85a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "rowNo",
+                "type": "string"
+            },
+            "designerId": "dd24c5c6-dd44-4084-a778-c64015b7fc56"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "locationNo",
+                "type": "string"
+            },
+            "designerId": "aea90f3f-0009-4b90-a5cc-d1149313fa50"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "layer",
+                "type": "int"
+            },
+            "designerId": "0b912e69-858f-4aa0-b09f-45e2f2ecf1b2"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "stateIn",
+                "type": "string"
+            },
+            "designerId": "aa7bd4ba-b8a0-48bc-ba4e-9e27a5bcd451"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "stateOut",
+                "type": "int"
+            },
+            "designerId": "93309702-4539-4e45-80be-20bc5e162d35"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "holdFlag",
+                "type": "int"
+            },
+            "designerId": "d550efb8-3d57-4fea-b5d9-f29a9b9679bd"
+        }
+    ]
+}

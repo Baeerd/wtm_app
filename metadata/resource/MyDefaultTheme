@@ -1,0 +1,18 @@
+{
+    "type": "defaultthemeresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyDefaultTheme"
+    },
+    "designerId": "8ceefc54-3be8-467c-b881-a78f4043d155",
+    "storage": {
+        "needsCompile": false,
+        "simple": {},
+        "nameIndex": 1,
+        "varData": {}
+    }
+}

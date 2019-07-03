@@ -1,0 +1,59 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "WAREHOUSE_HALL_ZONEJsonStore",
+        "model": "WAREHOUSEModel",
+        "storeId": "WAREHOUSE_HALL_ZONEJsonStore"
+    },
+    "designerId": "4ef78567-727e-4105-958d-bebd9d336abf",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "WAREHOUSEAjaxProxy"
+            },
+            "designerId": "293b3d76-742b-4a98-be86-dfb898c8cd6c",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "WAREHOUSEJsonReader",
+                        "rootProperty": "items"
+                    },
+                    "designerId": "ab917f9b-6737-4774-b32b-5a99e2ac0241"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreLoad",
+                "implHandler": [
+                    ""
+                ],
+                "name": "load"
+            },
+            "designerId": "d52bce82-db22-44f6-a994-0788ab362f2b"
+        }
+    ]
+}

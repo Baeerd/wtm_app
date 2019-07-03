@@ -1,0 +1,1679 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "targetchangeingview",
+        "designer|userClassName": "TargetChangeingView",
+        "id": "targetChangeingView",
+        "layout": "vbox"
+    },
+    "designerId": "c2ef3aab-d0b8-4658-ae8b-e4a39a9353cd",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 80,
+                "layout": "fit"
+            },
+            "designerId": "a369a5a7-65e7-46c2-8415-ba93d2518f72",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "menu_view_bg"
+                        ],
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": 80,
+                        "itemId": "titileLayout",
+                        "layout": "hbox",
+                        "padding": "0 20"
+                    },
+                    "designerId": "27a66d0c-7763-4128-ba4c-a74c9b2fa5fd",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family",
+                                    "title_font_size"
+                                ],
+                                "html": "扫码倒垛"
+                            },
+                            "designerId": "8d588369-41a7-450b-83e9-29186f05ce96"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": null,
+                        "itemId": "buttonLayout",
+                        "layout": "hbox"
+                    },
+                    "designerId": "6eece345-c5d4-4cac-a89c-7c725fc34c9f",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family"
+                                ],
+                                "container|align": null,
+                                "container|pack": null,
+                                "height": "100%",
+                                "itemId": "mycontainer61",
+                                "layout": "hbox",
+                                "margin": "0 0 0 10",
+                                "minWidth": 70
+                            },
+                            "designerId": "3ad395b7-10c4-4a82-bd34-4ec9feda85fe",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMycontainer61Initialize",
+                                        "implHandler": [
+                                            "component.element.on('tap',function(){\r",
+                                            "//     var root = component.up('#root');\r",
+                                            "//     var menuView = root.down('#menuView');\r",
+                                            "//     var slide = Ext.create(\"Ext.fx.layout.card.Slide\",{direction:\"right\"});\r",
+                                            "//     root.animateActiveItem(menuView,slide);\r",
+                                            "//     var root = Ext.getCmp('rootView');\r",
+                                            "//     root.pop();\r",
+                                            "    \r",
+                                            "    var currentView = component.up('#targetChangeingView');\r",
+                                            "    currentView.down('#matId').setValue('');\r",
+                                            "    currentView.down('#weight').setValue('');\r",
+                                            "    currentView.down('#standard').setValue('');\r",
+                                            "    currentView.down('#type').setValue('');\r",
+                                            "    currentView.down('#current').setValue('');\r",
+                                            "    currentView.down('#target').setValue('');\r",
+                                            "    currentView.down('#scanPile').setValue('');\r",
+                                            "    setTimeout(function() {\r",
+                                            "        currentView.down('#matId').focus( );\r",
+                                            "    },1000);\r",
+                                            "});\r",
+                                            ""
+                                        ],
+                                        "name": "initialize"
+                                    },
+                                    "designerId": "e80a5e30-5113-4ca4-90f5-0988afbc5694"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "button_normal"
+                                        ],
+                                        "container|align": "center",
+                                        "container|pack": "center",
+                                        "itemId": "mycontainer110",
+                                        "layout": "hbox",
+                                        "layout|flex": 1,
+                                        "margin": "10 0"
+                                    },
+                                    "designerId": "7ef54c0f-aea7-4fb3-a7da-6ca3f5585daf",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMycontainer109Initialize2",
+                                                "implHandler": [
+                                                    "component.element.on('touchstart',function() {\r",
+                                                    "    component.setCls('button_press');\r",
+                                                    "});\r",
+                                                    "component.element.on('touchend',function() {\r",
+                                                    "    component.setCls('button_normal');\r",
+                                                    "});"
+                                                ],
+                                                "name": "initialize"
+                                            },
+                                            "designerId": "31219903-cde4-45b4-a8aa-dceec0778825"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": null
+                                            },
+                                            "designerId": "3f8a45de-d453-4f31-ae89-005a7dde9590"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "清空"
+                                            },
+                                            "designerId": "e28db5be-fa96-48e1-82ef-f6c182d844fa"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "designerId": "4f4e178a-f1ef-4287-9437-76339d9d9c35"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family"
+                                ],
+                                "container|align": null,
+                                "container|pack": null,
+                                "height": "100%",
+                                "html": null,
+                                "itemId": "mycontainer148",
+                                "layout": "hbox",
+                                "margin": "0 10 0 0",
+                                "minWidth": 70
+                            },
+                            "designerId": "b12ee61c-20c1-40a1-90b0-68e4304617b0",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMycontainer148Initialize",
+                                        "implHandler": [
+                                            "var me = component;//1410358722010\r",
+                                            "component.element.on('tap',function() {\r",
+                                            "\r",
+                                            "    Ext.Viewport.setMasked({\r",
+                                            "        xtype: 'loadmask',\r",
+                                            "        fullscreen:true,\r",
+                                            "        message: '请稍候......'\r",
+                                            "    });\r",
+                                            "\r",
+                                            "    var view = me.up('#targetChangeingView');\r",
+                                            "    var data = view.getData();\r",
+                                            "    var target = view.down('#target');//.getValue();\r",
+                                            "\r",
+                                            "\r",
+                                            "    if (data===null||data===undefined||\r",
+                                            "        data.a===null||data.a===undefined||data.a==='') {\r",
+                                            "        if (Ext.os.is('Android')) {\r",
+                                            "//             window.plugins.toast.show('钢卷信息不能为空！', 'long', 'center',\r",
+                                            "//                                       function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                       function(b){console.log('toast error: ' + b);});\r",
+                                            "            notice('钢卷号不能为空！',null,'错误','确定');\r",
+                                            "        } else {\r",
+                                            "            Ext.Msg.alert('错误','钢卷信息不能为空！',Ext.emptyFn);\r",
+                                            "        }\r",
+                                            "        Ext.Viewport.setMasked(false);\r",
+                                            "    } else if (target.getValue()===null||target.getValue()===undefined||target.getValue()==='') {\r",
+                                            "        if (Ext.os.is('Android')) {\r",
+                                            "//             window.plugins.toast.show('目标垛位不能为空！', 'long', 'center',\r",
+                                            "//                                       function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                       function(b){console.log('toast error: ' + b);});\r",
+                                            "            notice('目标垛位不能为空！',null,'错误','确定');\r",
+                                            "        } else {\r",
+                                            "            Ext.Msg.alert('错误','目标垛位不能为空！',Ext.emptyFn);\r",
+                                            "        }\r",
+                                            "        Ext.Viewport.setMasked(false);\r",
+                                            "    } else {\r",
+                                            "        console.log(data.a);\r",
+                                            "        var coil = Ext.decode(data.a);\r",
+                                            "        //     console.log('coil = ' , coil);\r",
+                                            "        //     console.log('username = ' , sessionStorage.username);\r",
+                                            "        //     console.log('target = ' , view.down('#target').getValue());\r",
+                                            "        var obj = {};\r",
+                                            "        obj.matId= coil.items[0].matId;\r",
+                                            "        obj.slotSid= coil.items[0].slotSid;\r",
+                                            "\r",
+                                            "        obj.slotId= coil.items[0].slotId;\r",
+                                            "        obj.steelGrade= coil.items[0].steelGrade;\r",
+                                            "        obj.matWeight= coil.items[0].matWeight;\r",
+                                            "        obj.fixedWarehouseId= coil.items[0].fixedWarehouseId;\r",
+                                            "        obj.coilPressed= coil.items[0].coilPressed;\r",
+                                            "        obj.sid= coil.items[0].sid;\r",
+                                            "        obj.targetSlotSid= target.targetSlotSid;\r",
+                                            "//         obj.targetSlotId= target.valueField;\r",
+                                            "//         obj.targetSlotLayer= target.layer;\r",
+                                            "        //-------------------------------\r",
+                                            "        var tempStr = target.getValue();\r",
+                                            "        var index = tempStr.lastIndexOf('-');\r",
+                                            "        //obj.slotId= target.valueField;//自己写\r",
+                                            "        //obj.layer= target.layer;\r",
+                                            "        obj.targetSlotId= tempStr.substring(0,index);\r",
+                                            "        obj.targetSlotLayer= tempStr.substring(index+1,index+2);\r",
+                                            "//         tempStr = target.valueField;\r",
+                                            "        //-------------------------------\r",
+                                            "//       {\r",
+                                            "//  \"matId\": \"1510157611030\",\r",
+                                            "//  \"slotSid\": 3772,\r",
+                                            "//  \"slotId\": \"YL02-F-01-01\",\r",
+                                            "//  \"steelGrade\": \"SPHC\",\r",
+                                            "//  \"matWeight\": 28.94,\r",
+                                            "//  \"fixedWarehouseId\": \"YL\",\r",
+                                            "//  \"coilPressed\": \"N\",\r",
+                                            "//  \"sid\": 2653,\r",
+                                            "//  \"targetSlotSid\": 4,\r",
+                                            "//  \"targetSlotId\": \"YL01-A-01-04\",\r",
+                                            "//  \"targetSlotLayer\": 2\r",
+                                            "// }\r",
+                                            "\r",
+                                            "\r",
+                                            "        var str = Ext.encode(obj);\r",
+                                            "            console.log(str);\r",
+                                            "\r",
+                                            "\r",
+                                            "        Ext.Ajax.request({\r",
+                                            "            //     url: 'system/login!login.action',\r",
+                                            "            //     url:'http://192.168.0.112/mes-wtm-app/wtm/inventory-check!saveRecords.action',\r",
+                                            "            url:rootUrl+'/wtm/mat-move!saveMatMove.action',\r",
+                                            "            method:'POST',\r",
+                                            "            params: {\r",
+                                            "                'detaillist':str\r",
+                                            "            },\r",
+                                            "            success: function(conn, response, options, eOpts) {\r",
+                                            "                console.log('success');\r",
+                                            "                var text = conn.responseText;\r",
+                                            "                var obj = Ext.decode(text);\r",
+                                            "                console.log('conn = ',conn.responseText);\r",
+                                            "                console.log('obj = ',obj);\r",
+                                            "                if (obj.success) {\r",
+                                            "                    if (Ext.os.is('Android')) {\r",
+                                            "//                         window.plugins.toast.show(obj.message, 'long', 'center',\r",
+                                            "//                                                   function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                                   function(b){console.log('toast error: ' + b);});\r",
+                                            "//                         navigator.notification.alert(\r",
+                                            "//                             obj.message,  // message\r",
+                                            "//                             null,         // callback\r",
+                                            "//                             '结果',            // title\r",
+                                            "//                             '确定'                  // buttonName\r",
+                                            "//                         );\r",
+                                            "                        notice(obj.message,null,'结果','确定');\r",
+                                            "                    } else {\r",
+                                            "                        Ext.Msg.alert('结果',obj.message,Ext.emptyFn);\r",
+                                            "                    }\r",
+                                            "\r",
+                                            "                    var currentView = me.up('#targetChangeingView');\r",
+                                            "                    currentView.down('#matId').setValue('');\r",
+                                            "                    currentView.down('#weight').setValue('');\r",
+                                            "                    currentView.down('#standard').setValue('');\r",
+                                            "                    currentView.down('#type').setValue('');\r",
+                                            "                    currentView.down('#current').setValue('');\r",
+                                            "                    currentView.down('#target').setValue('');\r",
+                                            "                    currentView.down('#scanPile').setValue('');\r",
+                                            "\r",
+                                            "                    currentView.down('#matId').focus( );\r",
+                                            "\r",
+                                            "                } else if('session失效,请重登录！'===obj.message) {\r",
+                                            "                    //session失效,请重登录！\r",
+                                            "                    console.log('session失效,请重登录！');\r",
+                                            "                    if (Ext.os.is('Android')) {\r",
+                                            "//                         window.plugins.toast.show(obj.message, 'long', 'center',\r",
+                                            "//                                                   function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                                   function(b){console.log('toast error: ' + b);});\r",
+                                            "                        notice(obj.message,InvalidFunc(),'错误','确定');\r",
+                                            "                    } else {\r",
+                                            "                       Ext.Msg.alert('错误',obj.message,InvalidFunc());\r",
+                                            "                    }\r",
+                                            "                } else {\r",
+                                            "                    if (Ext.os.is('Android')) {\r",
+                                            "//                         window.plugins.toast.show(obj.message, 'long', 'center',\r",
+                                            "//                                                   function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                                   function(b){console.log('toast error: ' + b);});\r",
+                                            "//                         navigator.notification.alert(\r",
+                                            "//                             obj.message,  // message\r",
+                                            "//                             null,         // callback\r",
+                                            "//                             '错误',            // title\r",
+                                            "//                             '确定'                  // buttonName\r",
+                                            "//                         );\r",
+                                            "                        notice(obj.message,null,'错误','确定');\r",
+                                            "                    } else {\r",
+                                            "                        Ext.Msg.alert('错误',obj.message,Ext.emptyFn);\r",
+                                            "                    }\r",
+                                            "\r",
+                                            "                }\r",
+                                            "\r",
+                                            "                Ext.Viewport.setMasked(false);\r",
+                                            "            },\r",
+                                            "            failure: function(conn, response, options, eOpts) {\r",
+                                            "                if (Ext.os.is('Android')) {\r",
+                                            "//                     window.plugins.toast.show('连接异常！', 'long', 'center',\r",
+                                            "//                                               function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                               function(b){console.log('toast error: ' + b);});\r",
+                                            "//                     navigator.notification.alert(\r",
+                                            "//                         obj.message,  // message\r",
+                                            "//                         null,         // callback\r",
+                                            "//                         '错误',            // title\r",
+                                            "//                         '确定'                  // buttonName\r",
+                                            "//                     );\r",
+                                            "                    notice('连接异常！',null,'错误','确定');\r",
+                                            "                } else {\r",
+                                            "                    Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);\r",
+                                            "                }\r",
+                                            "\r",
+                                            "                Ext.Viewport.setMasked(false);\r",
+                                            "            }\r",
+                                            "        });\r",
+                                            "    }\r",
+                                            "\r",
+                                            "});"
+                                        ],
+                                        "name": "initialize"
+                                    },
+                                    "designerId": "c5604ba8-95bf-4168-82eb-69174fddab25"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "button_normal"
+                                        ],
+                                        "container|align": "center",
+                                        "container|pack": "center",
+                                        "itemId": "mycontainer111",
+                                        "layout": "hbox",
+                                        "layout|flex": 1,
+                                        "margin": "10 0"
+                                    },
+                                    "designerId": "aceed482-c8ce-4506-b385-84f4a560b722",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMycontainer109Initialize21",
+                                                "implHandler": [
+                                                    "component.element.on('touchstart',function() {\r",
+                                                    "    component.setCls('button_press');\r",
+                                                    "});\r",
+                                                    "component.element.on('touchend',function() {\r",
+                                                    "    component.setCls('button_normal');\r",
+                                                    "});"
+                                                ],
+                                                "name": "initialize"
+                                            },
+                                            "designerId": "f9568ce3-24b4-4c04-ab3f-82fea47f84d2"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "确认倒垛"
+                                            },
+                                            "designerId": "dae61b3e-29e2-4bfb-b2f0-f315965dd52f"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "white_bg"
+                ],
+                "container|align": "center",
+                "container|pack": null,
+                "layout": "vbox",
+                "layout|flex": 1,
+                "padding": "10% 2%",
+                "scrollable": "vertical"
+            },
+            "designerId": "e7bdbdb6-263a-42b3-b119-a172d8e28063",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 36,
+                        "layout": "hbox",
+                        "margin": "2 0",
+                        "width": "100%"
+                    },
+                    "designerId": "a8a3669d-36b1-4886-b77e-7476935a2040",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "钢卷号",
+                                "width": 65
+                            },
+                            "designerId": "51f4450e-c3d2-485f-a7e5-435d406342d2"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "light_blue_border",
+                                    "margin_content"
+                                ],
+                                "height": "100%",
+                                "layout|flex": 1
+                            },
+                            "designerId": "c9be1903-a968-418c-a660-4f3f1cc72dc0",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "white_select_input",
+                                        "itemId": "matId",
+                                        "label": null
+                                    },
+                                    "designerId": "cfe0fbd3-02c2-4b30-95ec-b23a56bcdb8e",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMytextfield1Blur",
+                                                "implHandler": [
+                                                    "console.log('失去焦点');\r",
+                                                    "var currentView = textfield.up('#targetChangeingView');\r",
+                                                    "var myMatId = textfield.getValue();\r",
+                                                    "var myMatId = Trim(myMatId);\r",
+                                                    "console.log('失去焦点:',myMatId);//1410358722010\r",
+                                                    "//校验是否为13位数字\r",
+                                                    "var reg = new RegExp(\"^[0-9]{13}$\");\r",
+                                                    "if (myMatId!==''&&myMatId!==null&&myMatId!==undefined&&reg.test(myMatId)) {\r",
+                                                    "    Ext.Ajax.request({\r",
+                                                    "        //     url: 'system/login!login.action',\r",
+                                                    "        //     url:'http://192.168.0.112/mes-wtm-app/system/login!login.action',\r",
+                                                    "        //url:rootUrl+'/wtm/mat-move!findMatMoveVoByPage.action',\r",
+                                                    "        url:rootUrl+'/wtm/mat-move!findMatMoveVoForMobile.action',\r",
+                                                    "        method:'POST',\r",
+                                                    "        params: {\r",
+                                                    "            //         username: userName,\r",
+                                                    "            //         password: passWord,\r",
+                                                    "            'qm.matId':textfield.getValue()\r",
+                                                    "        },\r",
+                                                    "        success: function(conn, response, options, eOpts) {\r",
+                                                    "            console.log('success');\r",
+                                                    "            var text = conn.responseText;\r",
+                                                    "            var obj = Ext.decode(text);\r",
+                                                    "            console.log('conn = ',conn.responseText);\r",
+                                                    "            console.log('obj = ',obj);\r",
+                                                    "            if (obj.results===1) {\r",
+                                                    "\r",
+                                                    "                currentView.setData({\r",
+                                                    "                    a:text\r",
+                                                    "                });\r",
+                                                    "\r",
+                                                    "                currentView.down('#weight').setValue(obj.items[0].matWeight+'t');\r",
+                                                    "//                 currentView.down('#standar d').setValue(obj.items[0].matWidth+\r",
+                                                    "//                             'mm x'+obj.items[0].matThickness+'mm');\r",
+                                                    "                currentView.down('#type').setValue(obj.items[0].steelGrade);\r",
+                                                    "                currentView.down('#current').setValue(obj.items[0].slotIdDisplay);\r",
+                                                    "//                 console.log('重量：'+obj.items[0].matWeight+'，规格：'+obj.items[0].matWidth+\r",
+                                                    "//                             'mm x'+obj.items[0].matThickness+'mm,钢种:'+obj.items[0].steelGrade);\r",
+                                                    "\r",
+                                                    "                currentView.down('#scanPile').focus( );\r",
+                                                    "            } else {\r",
+                                                    "                if (Ext.os.is('Android')) {\r",
+                                                    "//                     window.plugins.toast.show('没有匹配的结果！', 'long', 'center',\r",
+                                                    "//                                               function(a){console.log('toast success: ' + a);},\r",
+                                                    "//                                               function(b){console.log('toast error: ' + b);});\r",
+                                                    "                    notice('没有匹配的钢卷！',null,'错误','确定');\r",
+                                                    "                } else {\r",
+                                                    "                    Ext.Msg.alert('错误','没有匹配的结果！',Ext.emptyFn);\r",
+                                                    "                }\r",
+                                                    "            }\r",
+                                                    "\r",
+                                                    "        },\r",
+                                                    "        failure: function(conn, response, options, eOpts) {\r",
+                                                    "            if (Ext.os.is('Android')) {\r",
+                                                    "//                 window.plugins.toast.show('连接异常！', 'long', 'center',\r",
+                                                    "//                                           function(a){console.log('toast success: ' + a);},\r",
+                                                    "//                                           function(b){console.log('toast error: ' + b);});\r",
+                                                    "                notice('连接异常！',null,'错误','确定');\r",
+                                                    "            } else {\r",
+                                                    "                Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);\r",
+                                                    "            }\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "} else if (myMatId!==''&&myMatId!==null&&myMatId!==undefined&&!reg.test(myMatId)){\r",
+                                                    "    if (Ext.os.is('Android')) {\r",
+                                                    "        notice('不是有效的钢卷号！',null,'错误','确定');\r",
+                                                    "    } else {\r",
+                                                    "        Ext.Msg.alert('错误','不是有效的钢卷号！',Ext.emptyFn);\r",
+                                                    "    }\r",
+                                                    "} else {\r",
+                                                    "//     if (Ext.os.is('Android')) {\r",
+                                                    "//         notice('钢卷号不能为空！',null,'错误','确定');\r",
+                                                    "//     } else {\r",
+                                                    "//         Ext.Msg.alert('错误','钢卷号不能为空！',Ext.emptyFn);\r",
+                                                    "//     }\r",
+                                                    "\r",
+                                                    "    var currentView = textfield.up('#targetChangeingView');\r",
+                                                    "    currentView.down('#weight').setValue('');\r",
+                                                    "    currentView.down('#type').setValue('');\r",
+                                                    "    currentView.down('#current').setValue('');\r",
+                                                    "    currentView.down('#target').setValue('');\r",
+                                                    "}"
+                                                ],
+                                                "name": "blur"
+                                            },
+                                            "designerId": "2b4a6c83-74e0-4719-8a2c-78fc5ca89386"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMatIdClearicontap",
+                                                "implHandler": [
+                                                    "var currentView = textfield.up('#targetChangeingView');\r",
+                                                    "currentView.down('#weight').setValue('');\r",
+                                                    "currentView.down('#type').setValue('');\r",
+                                                    "currentView.down('#current').setValue('');\r",
+                                                    "currentView.down('#target').setValue('');"
+                                                ],
+                                                "name": "clearicontap"
+                                            },
+                                            "designerId": "da4b063d-1d46-4bca-b2ba-b697fbed5769"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "menu_view_bg",
+                                    "base_font_family"
+                                ],
+                                "hidden": true,
+                                "itemId": "mybutton4",
+                                "text": "清空"
+                            },
+                            "designerId": "f95f9e64-b923-4af6-8f56-716368988be9",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMybutton4Tap",
+                                        "implHandler": [
+                                            "var currentView = button.up('#targetChangeingView');\r",
+                                            "currentView.down('#matId').setValue('');\r",
+                                            "currentView.down('#weight').setValue('');\r",
+                                            "currentView.down('#standard').setValue('');\r",
+                                            "currentView.down('#type').setValue('');\r",
+                                            "currentView.down('#current').setValue('');\r",
+                                            "currentView.down('#target').setValue('');\r",
+                                            "currentView.down('#scanPile').setValue('');\r",
+                                            "\r",
+                                            "// //扫描功能\r",
+                                            "// if (Ext.os.is.Android) {\r",
+                                            "//     cordova.plugins.barcodeScanner.scan(\r",
+                                            "//         //扫描成功回调\r",
+                                            "//         function (result) {\r",
+                                            "//             //解析结果\r",
+                                            "//             var myMatId = result.text;\r",
+                                            "//             currentView.down('#matId').setValue(myMatId);\r",
+                                            "//             //服务器查询结果\r",
+                                            "//             //显示结果\r",
+                                            "//             if (myMatId!==''&&myMatId!==null&&myMatId!==undefined) {\r",
+                                            "//                 Ext.Ajax.request({\r",
+                                            "//                     //     url: 'system/login!login.action',\r",
+                                            "//                     //     url:'http://192.168.0.112/mes-wtm-app/system/login!login.action',\r",
+                                            "//                     url:rootUrl+'/wtm/inventory-mat!findByPage.action',\r",
+                                            "//                     method:'POST',\r",
+                                            "//                     params: {\r",
+                                            "//                         //         username: userName,\r",
+                                            "//                         //         password: passWord,\r",
+                                            "//                         'qm.matId':myMatId\r",
+                                            "//                     },\r",
+                                            "//                     success: function(conn, response, options, eOpts) {\r",
+                                            "//                         console.log('success');\r",
+                                            "//                         var text = conn.responseText;\r",
+                                            "//                         var obj = Ext.decode(text);\r",
+                                            "//                         console.log('conn = ',conn.responseText);\r",
+                                            "//                         console.log('obj = ',obj);\r",
+                                            "//                         if (obj.results===1) {\r",
+                                            "//                             currentView.down('#weight').setValue(obj.items[0].matWeight+'t');\r",
+                                            "//                             currentView.down('#standard').setValue(obj.items[0].matWidth+\r",
+                                            "//                                                                   'mm x'+obj.items[0].matThickness+'mm');\r",
+                                            "//                             currentView.down('#type').setValue(obj.items[0].steelGrade);\r",
+                                            "//                             currentView.down('#current').setValue(obj.items[0].slotId);\r",
+                                            "\r",
+                                            "//                         } else {\r",
+                                            "//                             if (Ext.os.is('Android')) {\r",
+                                            "//                                 window.plugins.toast.show('没有匹配的结果！', 'long', 'center',\r",
+                                            "//                                                           function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                                           function(b){console.log('toast error: ' + b);});\r",
+                                            "//                             } else {\r",
+                                            "//                                 Ext.Msg.alert('错误','没有匹配的结果！',Ext.emptyFn);\r",
+                                            "//                             }\r",
+                                            "//                         }\r",
+                                            "\r",
+                                            "//                     },\r",
+                                            "//                     failure: function(conn, response, options, eOpts) {\r",
+                                            "//                         if (Ext.os.is('Android')) {\r",
+                                            "//                             window.plugins.toast.show('连接异常！', 'long', 'center',\r",
+                                            "//                                                       function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                                       function(b){console.log('toast error: ' + b);});\r",
+                                            "//                         } else {\r",
+                                            "//                             Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);\r",
+                                            "//                         }\r",
+                                            "//                     }\r",
+                                            "//                 });\r",
+                                            "//             } else {\r",
+                                            "//                 if (Ext.os.is('Android')) {\r",
+                                            "//                     window.plugins.toast.show('钢卷号扫描失败！', 'long', 'center',\r",
+                                            "//                                               function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                               function(b){console.log('toast error: ' + b);});\r",
+                                            "//                 } else {\r",
+                                            "//                     Ext.Msg.alert('错误','钢卷号扫描失败！',Ext.emptyFn);\r",
+                                            "//                 }\r",
+                                            "//             }\r",
+                                            "//             //服务器查询结果\r",
+                                            "//             //显示结果\r",
+                                            "//         },\r",
+                                            "//         //扫描失败回调\r",
+                                            "//         function (error) {\r",
+                                            "// //             showContainer.setHtml(\"Scanning failed: \" + error);\r",
+                                            "//             if (Ext.os.is('Android')) {\r",
+                                            "//                 window.plugins.toast.show('条形码扫描失败！', 'long', 'center',\r",
+                                            "//                                           function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                           function(b){console.log('toast error: ' + b);});\r",
+                                            "//             } else {\r",
+                                            "//                 Ext.Msg.alert('错误','条形码扫描失败！',Ext.emptyFn);\r",
+                                            "//             }\r",
+                                            "//         }\r",
+                                            "//     );\r",
+                                            "// }\r",
+                                            ""
+                                        ],
+                                        "name": "tap"
+                                    },
+                                    "designerId": "c74a9bc4-0772-44aa-b426-500ab1d30d1c"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 36,
+                        "hidden": false,
+                        "layout": "hbox",
+                        "margin": "2 0",
+                        "width": "100%"
+                    },
+                    "designerId": "10ecd62f-1362-4b1b-9fcf-b378789315f2",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "重量",
+                                "margin": null,
+                                "width": 65
+                            },
+                            "designerId": "cbb65b82-73c6-45e0-b06a-30dde0744112"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "margin_content"
+                                ],
+                                "height": "100%",
+                                "layout|flex": 1
+                            },
+                            "designerId": "996da201-d09e-4e1f-b5fb-083b09dbb859",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "clearIcon": false,
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "color_select_input",
+                                        "itemId": "weight",
+                                        "label": null,
+                                        "readOnly": true
+                                    },
+                                    "designerId": "2b4c0df4-b691-4c17-8064-cb85f6941a8d"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 36,
+                        "hidden": true,
+                        "layout": "hbox",
+                        "margin": "2 0",
+                        "width": "100%"
+                    },
+                    "designerId": "11503eba-a7e4-48a2-9a30-f4085b5c849b",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "规格",
+                                "margin": null,
+                                "width": 65
+                            },
+                            "designerId": "83c04a8a-12c6-4b24-98dc-c172c6781c3f"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "margin_content"
+                                ],
+                                "height": "100%",
+                                "layout|flex": 1
+                            },
+                            "designerId": "684c214f-e7f6-48de-b5af-bae284199774",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "clearIcon": false,
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "color_select_input",
+                                        "itemId": "standard",
+                                        "label": null,
+                                        "readOnly": true
+                                    },
+                                    "designerId": "35b242a1-93e6-4ae3-804b-a19c5ef55f8c"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 36,
+                        "hidden": false,
+                        "layout": "hbox",
+                        "margin": "2 0",
+                        "width": "100%"
+                    },
+                    "designerId": "afff5cb9-35b6-4b8f-8ff2-7b92f424fd72",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "钢种",
+                                "margin": null,
+                                "width": 65
+                            },
+                            "designerId": "8e199cfc-f20e-4c6d-b667-9d12f7000951"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "margin_content"
+                                ],
+                                "height": "100%",
+                                "layout|flex": 1
+                            },
+                            "designerId": "0aba40ac-8b50-4211-830a-bb74bc81d47d",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "clearIcon": false,
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "color_select_input",
+                                        "itemId": "type",
+                                        "label": null,
+                                        "readOnly": true
+                                    },
+                                    "designerId": "632c07e9-aa84-4230-af7e-2e8fe2aae757"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 36,
+                        "layout": "hbox",
+                        "margin": "2 0",
+                        "width": "100%"
+                    },
+                    "designerId": "5f744079-ed47-46b7-801c-a3aea6d509f7",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "原垛位",
+                                "margin": null,
+                                "width": 65
+                            },
+                            "designerId": "2701d136-1cb9-462b-a872-b7ba6a173d7e"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "margin_content"
+                                ],
+                                "height": "100%",
+                                "layout|flex": 1
+                            },
+                            "designerId": "7d9a82d2-22c2-4c0b-98be-45c59630f77b",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "clearIcon": false,
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "color_select_input",
+                                        "itemId": "current",
+                                        "label": null,
+                                        "readOnly": true
+                                    },
+                                    "designerId": "34a9e25a-90f4-4f87-b616-c622db5ca55e"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 36,
+                        "layout": "hbox",
+                        "margin": "2 0",
+                        "width": "100%"
+                    },
+                    "designerId": "4de27401-e010-443a-8347-e840df6c52ac",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "扫描垛位",
+                                "width": 65
+                            },
+                            "designerId": "724cfce4-81d6-47ea-8b44-210c3ae778bd"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "light_blue_border",
+                                    "margin_content"
+                                ],
+                                "height": "100%",
+                                "layout|flex": 1
+                            },
+                            "designerId": "49539374-28ef-41ec-b3c9-d9b563f599e8",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "white_select_input",
+                                        "itemId": "scanPile",
+                                        "label": null
+                                    },
+                                    "designerId": "0ed13e59-0e75-4d2b-bb8c-c993d8ba4032",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMytextfield1Blur11",
+                                                "implHandler": [
+                                                    "console.log('失去焦点');\r",
+                                                    "var currentView = textfield.up('#targetChangeingView');\r",
+                                                    "var myMatId = textfield.getValue();\r",
+                                                    "console.log('失去焦点:',myMatId);//5191400884600//3991006289100\r",
+                                                    "if (myMatId!==''&&myMatId!==null&&myMatId!==undefined) {\r",
+                                                    "    Ext.Ajax.request({\r",
+                                                    "        //     url: 'system/login!login.action',\r",
+                                                    "        //     url:'http://192.168.0.112/mes-wtm-app/system/login!login.action',\r",
+                                                    "        url:rootUrl+'/wtm/view-slot-switch!findSlot.action',\r",
+                                                    "        method:'POST',\r",
+                                                    "        params: {\r",
+                                                    "            //         username: userName,\r",
+                                                    "            //         password: passWord,\r",
+                                                    "            'qm.actualSlot':textfield.getValue()\r",
+                                                    "        },\r",
+                                                    "        success: function(conn, response, options, eOpts) {\r",
+                                                    "            console.log('success');\r",
+                                                    "            var text = conn.responseText;\r",
+                                                    "            var obj = Ext.decode(text);\r",
+                                                    "            console.log('conn = ',conn.responseText);\r",
+                                                    "            console.log('obj = ',obj);\r",
+                                                    "            if (obj.results===1) {\r",
+                                                    "\r",
+                                                    "//                 currentView.setData({\r",
+                                                    "//                     a:text\r",
+                                                    "//                 });\r",
+                                                    "\r",
+                                                    "//                 currentView.down('#weight').setValue(obj.items[0].matWeight+'t');\r",
+                                                    "//                 currentView.down('#standard').setValue(obj.items[0].matWidth+\r",
+                                                    "//                             'mm x'+obj.items[0].matThickness+'mm');\r",
+                                                    "//                 currentView.down('#type').setValue(obj.items[0].steelGrade);\r",
+                                                    "//                 currentView.down('#produceLine').setValue(obj.items[0].produceLine);\r",
+                                                    "//                 currentView.down('#isClosed').setValue(obj.items[0].isClosed);\r",
+                                                    "                currentView.down('#target').setValue(obj.items[0].sysSlot);\r",
+                                                    "                currentView.down('#target').valueField = obj.items[0].sysSlot;\r",
+                                                    "//                 console.log('重量：'+obj.items[0].matWeight+'，规格：'+obj.items[0].matWidth+\r",
+                                                    "//                             'mm x'+obj.items[0].matThickness+'mm,钢种:'+obj.items[0].steelGrade);\r",
+                                                    "            } else {\r",
+                                                    "                if (Ext.os.is('Android')) {\r",
+                                                    "//                     window.plugins.toast.show('没有匹配的结果！', 'long', 'center',\r",
+                                                    "//                                               function(a){console.log('toast success: ' + a);},\r",
+                                                    "//                                               function(b){console.log('toast error: ' + b);});\r",
+                                                    "                    notice('没有匹配的垛位！',null,'错误','确定');\r",
+                                                    "                } else {\r",
+                                                    "                    Ext.Msg.alert('错误','没有匹配的结果！',Ext.emptyFn);\r",
+                                                    "                }\r",
+                                                    "\r",
+                                                    "            }\r",
+                                                    "\r",
+                                                    "        },\r",
+                                                    "        failure: function(conn, response, options, eOpts) {\r",
+                                                    "            if (Ext.os.is('Android')) {\r",
+                                                    "//                 window.plugins.toast.show('连接异常！', 'long', 'center',\r",
+                                                    "//                                           function(a){console.log('toast success: ' + a);},\r",
+                                                    "//                                           function(b){console.log('toast error: ' + b);});\r",
+                                                    "                notice('连接异常！',null,'错误','确定');\r",
+                                                    "            } else {\r",
+                                                    "                Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);\r",
+                                                    "            }\r",
+                                                    "\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "} else {\r",
+                                                    "//     if (Ext.os.is('Android')) {\r",
+                                                    "// //         window.plugins.toast.show('垛位号不能为空！', 'long', 'center',\r",
+                                                    "// //                                   function(a){console.log('toast success: ' + a);},\r",
+                                                    "// //                                   function(b){console.log('toast error: ' + b);});\r",
+                                                    "//         notice('垛位号不能为空！',null,'错误','确定');\r",
+                                                    "//     } else {\r",
+                                                    "//         Ext.Msg.alert('错误','垛位号不能为空！',Ext.emptyFn);\r",
+                                                    "//     }\r",
+                                                    "\r",
+                                                    "}\r",
+                                                    ""
+                                                ],
+                                                "name": "blur"
+                                            },
+                                            "designerId": "dea62ae2-3aa1-45c7-9ef0-47d636a4c568"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMatIdClearicontap11",
+                                                "implHandler": [
+                                                    "var currentView = textfield.up('#targetChangeingView');\r",
+                                                    "// currentView.down('#weight').setValue('');\r",
+                                                    "// currentView.down('#type').setValue('');\r",
+                                                    "// currentView.down('#standard').setValue('');\r",
+                                                    "currentView.down('#target').setValue('');"
+                                                ],
+                                                "name": "clearicontap"
+                                            },
+                                            "designerId": "37aeff32-9e90-454f-a3db-6ed1d0edab52"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "menu_view_bg",
+                                    "base_font_family"
+                                ],
+                                "hidden": false,
+                                "itemId": "slotIdSearchMatId",
+                                "text": "查询"
+                            },
+                            "designerId": "cb037688-69e2-4b95-beb1-27789c3c88b6",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onSlotIdSearchMatIdTap",
+                                        "implHandler": [
+                                            "var currentView = button.up('#targetChangeingView');\r",
+                                            "var tempStr = currentView.down('#target').getValue();\r",
+                                            "var index = tempStr.lastIndexOf('-');\r",
+                                            "// obj.targetSlotId= tempStr.substring(0,index);\r",
+                                            "// obj.targetSlotLayer= tempStr.substring(index+1,index+2);\r",
+                                            "console.log('查询钢卷:',tempStr);//1410358722010\r",
+                                            "//校验是否为13位数字\r",
+                                            "if (tempStr!==''&&tempStr!==null&&tempStr!==undefined) {\r",
+                                            "    var tempStr = currentView.down('#target').getValue();\r",
+                                            "    var index = tempStr.lastIndexOf('-');\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        //     url: 'system/login!login.action',\r",
+                                            "        //     url:'http://192.168.0.112/mes-wtm-app/system/login!login.action',\r",
+                                            "        //url:rootUrl+'/wtm/mat-move!findMatMoveVoByPage.action',\r",
+                                            "        url:rootUrl+'/wtm/mat-move!findMatMoveVoForMobile.action',\r",
+                                            "        method:'POST',\r",
+                                            "        params: {\r",
+                                            "            'qm.slotId':tempStr.substring(0,index),\r",
+                                            "            'qm.layer':tempStr.substring(index+1,index+2)\r",
+                                            "        },\r",
+                                            "        success: function(conn, response, options, eOpts) {\r",
+                                            "            console.log('success');\r",
+                                            "            var text = conn.responseText;\r",
+                                            "            var obj = Ext.decode(text);\r",
+                                            "            console.log('conn = ',conn.responseText);\r",
+                                            "            console.log('obj = ',obj);\r",
+                                            "            if (obj.results===1) {\r",
+                                            "\r",
+                                            "                currentView.setData({\r",
+                                            "                    a:text\r",
+                                            "                });\r",
+                                            "\r",
+                                            "                currentView.down('#matId').setValue(obj.items[0].matId);\r",
+                                            "                currentView.down('#weight').setValue(obj.items[0].matWeight+'t');\r",
+                                            "//                 currentView.down('#standar d').setValue(obj.items[0].matWidth+\r",
+                                            "//                             'mm x'+obj.items[0].matThickness+'mm');\r",
+                                            "                currentView.down('#type').setValue(obj.items[0].steelGrade);\r",
+                                            "                currentView.down('#current').setValue(obj.items[0].slotIdDisplay);\r",
+                                            "//                 console.log('重量：'+obj.items[0].matWeight+'，规格：'+obj.items[0].matWidth+\r",
+                                            "//                             'mm x'+obj.items[0].matThickness+'mm,钢种:'+obj.items[0].steelGrade);\r",
+                                            "\r",
+                                            "//                 currentView.down('#scanPile').focus( );\r",
+                                            "            } else {\r",
+                                            "                if (Ext.os.is('Android')) {\r",
+                                            "//                     window.plugins.toast.show('没有匹配的结果！', 'long', 'center',\r",
+                                            "//                                               function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                               function(b){console.log('toast error: ' + b);});\r",
+                                            "                    notice('没有匹配的钢卷！',null,'错误','确定');\r",
+                                            "                } else {\r",
+                                            "                    Ext.Msg.alert('错误','没有匹配的结果！',Ext.emptyFn);\r",
+                                            "                }\r",
+                                            "            }\r",
+                                            "\r",
+                                            "        },\r",
+                                            "        failure: function(conn, response, options, eOpts) {\r",
+                                            "            if (Ext.os.is('Android')) {\r",
+                                            "//                 window.plugins.toast.show('连接异常！', 'long', 'center',\r",
+                                            "//                                           function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                           function(b){console.log('toast error: ' + b);});\r",
+                                            "                notice('连接异常！',null,'错误','确定');\r",
+                                            "            } else {\r",
+                                            "                Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);\r",
+                                            "            }\r",
+                                            "        }\r",
+                                            "    });\r",
+                                            "}  else {\r",
+                                            "//     if (Ext.os.is('Android')) {\r",
+                                            "//         notice('垛位号为空无法查询！',null,'错误','确定');\r",
+                                            "//     } else {\r",
+                                            "//         Ext.Msg.alert('错误','垛位号为空无法查询！',Ext.emptyFn);\r",
+                                            "//     }\r",
+                                            "\r",
+                                            "}"
+                                        ],
+                                        "name": "tap"
+                                    },
+                                    "designerId": "790b967a-f839-4c2f-bde7-f211357c14a1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 36,
+                        "layout": "hbox",
+                        "margin": "2 0",
+                        "width": "100%"
+                    },
+                    "designerId": "7dc4f3c7-5998-442f-a330-d5074166464a",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "目标垛位",
+                                "width": 65
+                            },
+                            "designerId": "6817ce85-b374-4e88-a55d-ebf4893eaec4"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "light_blue_border",
+                                    "margin_content"
+                                ],
+                                "height": "100%",
+                                "layout|flex": 1
+                            },
+                            "designerId": "785e2202-b821-4879-9d4b-437af78dd713",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "white_select_input",
+                                        "itemId": "target",
+                                        "label": null,
+                                        "readOnly": true,
+                                        "targetSlotSid": ""
+                                    },
+                                    "designerId": "d837499a-11ca-4a68-b316-075fc12c0c73",
+                                    "customConfigs": [
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "valueField",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "group": "(Custom Properties)",
+                                            "name": "targetSlotSid",
+                                            "type": "string"
+                                        }
+                                    ],
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onTargetFocus",
+                                                "implHandler": [
+                                                    "// var targetSelectDialog = Ext.create('widget.targetSelectDialog',{\r",
+                                                    "//     callback:function(displayValue,realValue,layer){\r",
+                                                    "//         console.log('putawayView callback');\r",
+                                                    "//         textfield.setValue(displayValue+'-'+layer);\r",
+                                                    "//         textfield.valueField = realValue;\r",
+                                                    "//     }\r",
+                                                    "// });\r",
+                                                    "// console.log('focuse = ',targetSelectDialog);\r",
+                                                    "// Ext.Viewport.add(targetSelectDialog);\r",
+                                                    "\r",
+                                                    "\r",
+                                                    "// var view = button.up('#targetChangeingView');\r",
+                                                    "// var target = view.down('#target');\r",
+                                                    "var target = textfield;\r",
+                                                    "var targetSelectDialog = Ext.getCmp('targetSelectDialog');\r",
+                                                    "if (targetSelectDialog) {\r",
+                                                    "//     console.log(targetSelectDialog);\r",
+                                                    "    targetSelectDialog.setCallback(function(displayValue,realValue,layer){\r",
+                                                    "            console.log('putawayView callback');\r",
+                                                    "            target.setValue(displayValue+'-'+layer);\r",
+                                                    "            target.valueField = displayValue;\r",
+                                                    "            target.layer = layer;\r",
+                                                    "            target.targetSlotSid = realValue;\r",
+                                                    "        });\r",
+                                                    "    targetSelectDialog.show();\r",
+                                                    "} else {\r",
+                                                    "    targetSelectDialog = Ext.create('widget.targetSelectDialog',{\r",
+                                                    "        callback:function(displayValue,realValue,layer){\r",
+                                                    "            console.log('putawayView callback');\r",
+                                                    "            target.setValue(displayValue+'-'+layer);\r",
+                                                    "            target.valueField = displayValue;\r",
+                                                    "            target.layer = layer;\r",
+                                                    "            target.targetSlotSid = realValue;\r",
+                                                    "        }\r",
+                                                    "    });\r",
+                                                    "    console.log('focuse = ',targetSelectDialog);\r",
+                                                    "    Ext.Viewport.add(targetSelectDialog);\r",
+                                                    "}\r",
+                                                    "var store = targetSelectDialog.down('#dataView').getStore();\r",
+                                                    "store.removeAll();"
+                                                ],
+                                                "name": "focus"
+                                            },
+                                            "designerId": "f8afe3bd-7f00-4942-890f-d665342f4859"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "menu_view_bg",
+                                    "base_font_family"
+                                ],
+                                "hidden": true,
+                                "itemId": "mybutton12",
+                                "text": "手动"
+                            },
+                            "designerId": "f4d2c71e-f0b4-4824-86de-3d2d2ee80a23",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMybutton8Tap111",
+                                        "implHandler": [
+                                            ""
+                                        ],
+                                        "name": "tap"
+                                    },
+                                    "designerId": "4ce597b4-40da-4129-a3ed-f554f3ac2f5d"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "menu_view_bg",
+                                    "base_font_family"
+                                ],
+                                "hidden": false,
+                                "itemId": "mybutton3",
+                                "text": "00"
+                            },
+                            "designerId": "47ab972b-4500-46dc-bade-76351eff8aaa",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMybutton3Tap",
+                                        "implHandler": [
+                                            "// var currentView = button.up('#targetChangeingView');\r",
+                                            "\r",
+                                            "// //扫描功能\r",
+                                            "// if (Ext.os.is.Android) {\r",
+                                            "//     cordova.plugins.barcodeScanner.scan(\r",
+                                            "//         //扫描成功回调\r",
+                                            "//         function (result) {\r",
+                                            "//             //解析结果\r",
+                                            "//             var text = result.text;\r",
+                                            "//             var target = result.text;\r",
+                                            "//             currentView.down('#target').setValue(target);\r",
+                                            "//             //服务器查询结果\r",
+                                            "//             //显示结果\r",
+                                            "//         },\r",
+                                            "//         //扫描失败回调\r",
+                                            "//         function (error) {\r",
+                                            "//             //             showContainer.setHtml(\"Scanning failed: \" + error);\r",
+                                            "//             if (Ext.os.is('Android')) {\r",
+                                            "//                 window.plugins.toast.show('条形码扫描失败！', 'long', 'center',\r",
+                                            "//                                           function(a){console.log('toast success: ' + a);},\r",
+                                            "//                                           function(b){console.log('toast error: ' + b);});\r",
+                                            "//             } else {\r",
+                                            "//                 Ext.Msg.alert('错误','条形码扫描失败！',Ext.emptyFn);\r",
+                                            "//             }\r",
+                                            "//         }\r",
+                                            "//     );\r",
+                                            "// }\r",
+                                            "// var view = button.up('#targetChangeingView');\r",
+                                            "// var target = view.down('#target');\r",
+                                            "// target.setValue('ZH00-0-00-00-1');\r",
+                                            "// console.log('xs00List');\r",
+                                            "var currentView = button.up('#targetChangeingView');\r",
+                                            "var target = currentView.down('#target');\r",
+                                            "var xs00List = Ext.create('widget.xs00List',{\r",
+                                            "    callback:function(displayValue,realValue,layer){\r",
+                                            "//         console.log('xs00List callback');\r",
+                                            "        target.setValue(displayValue);\r",
+                                            "//         target.valueField = displayValue;\r",
+                                            "//         target.layer = layer;\r",
+                                            "//         target.targetSlotSid = realValue;\r",
+                                            "    }\r",
+                                            "});\r",
+                                            "xs00List.showBy(button,'tr-cl');//"
+                                        ],
+                                        "name": "tap"
+                                    },
+                                    "designerId": "d9357ae2-6f1e-41b8-9690-6750c6b06561"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTargetChangeingViewHide",
+                "implHandler": [
+                    "// component.destory();"
+                ],
+                "name": "hide"
+            },
+            "designerId": "e3594196-00f2-4679-83c4-f059903a1c96"
+        }
+    ]
+}

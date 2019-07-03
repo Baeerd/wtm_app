@@ -1,0 +1,61 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "unplannedProductionLineJsonStore",
+        "designer|userClassName": "UnplannedProductionLineJsonStore",
+        "model": "WAREHOUSEModel",
+        "storeId": "unplannedProductionLineJsonStore"
+    },
+    "designerId": "f0735318-b360-4d66-ae89-cf14d3f7b545",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "WAREHOUSEAjaxProxy"
+            },
+            "designerId": "8f9a7007-fa70-4481-baf6-82f1d66910a5",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "WAREHOUSEJsonReader",
+                        "rootProperty": "items"
+                    },
+                    "designerId": "d7ed1692-7889-437c-9035-770d1c73c10c"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreLoad",
+                "implHandler": [
+                    "console.log('UnplannedProductionLineJsonStore');\r",
+                    ""
+                ],
+                "name": "load"
+            },
+            "designerId": "8d52ff83-94a9-40ce-805c-c51f0ceb51a1"
+        }
+    ]
+}

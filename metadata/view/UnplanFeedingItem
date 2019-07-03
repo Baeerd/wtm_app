@@ -1,0 +1,540 @@
+{
+    "type": "Ext.dataview.component.DataItem",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "unplanFeedingItem",
+        "designer|userClassName": "UnplanFeedingItem",
+        "layout": "hbox",
+        "margin": null,
+        "padding": null
+    },
+    "designerId": "9361851b-f355-4280-942c-d8ed725c19fe",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "updateRecord",
+                "implHandler": [
+                    "// console.log('updaterecord');\r",
+                    "// console.log('updaterecord',record);\r",
+                    "var me = this;\r",
+                    "if (record===null) {\r",
+                    "\r",
+                    "} else {\r",
+                    "    me.down('#WAREHOUSEName').setHtml(record.get('warehouseName'));\r",
+                    "    me.down('#steelGrade').setHtml(record.get('steelGrade'));\r",
+                    "    me.down('#standard').setHtml(record.get('matThickness')+' * '+record.get('matWidth'));\r",
+                    "    me.down('#weight').setHtml(record.get('matWeight'));\r",
+                    "    me.down('#matId').setHtml(record.get('matId'));\r",
+                    "    me.down('#slotId').setHtml(record.get('slotId'));\r",
+                    "    if ('MAT_FEEDING'===record.get('inventoryStatus')) {\r",
+                    "        me.down('#doFeedingButton').disable();\r",
+                    "        me.down('#doFeedingButton').setHtml('已投');\r",
+                    "    } else {\r",
+                    "        me.down('#doFeedingButton').enable();\r",
+                    "        me.down('#doFeedingButton').setHtml('投料');\r",
+                    "    }\r",
+                    "}\r",
+                    ""
+                ]
+            },
+            "designerId": "539ecf40-436d-470e-a288-8331da0d8103"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "layout": "hbox",
+                "padding": "10 10",
+                "width": "100%"
+            },
+            "designerId": "c705ee72-8982-49d3-938a-a0de3d8bf635",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "light_blue_border"
+                        ],
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "layout": "hbox",
+                        "width": "100%"
+                    },
+                    "designerId": "f970f380-2b2b-4d7d-8120-1a3ea3743ae6",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout": "vbox",
+                                "layout|flex": 1
+                            },
+                            "designerId": "0c362706-075c-4e7f-b438-91610e53feb4",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "f950d6f5-1535-4d6a-ac91-06a6021d6922",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "钢卷号："
+                                            },
+                                            "designerId": "ad61a29f-d815-479b-9212-24a81f000037"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "itemId": "matId"
+                                            },
+                                            "designerId": "7fe42bed-e2b6-487f-bfe2-a94b5d167a79"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "451b497e-2e37-4083-bea9-a947b2f0dc6e",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "库："
+                                            },
+                                            "designerId": "890ea43f-1367-4c76-bf80-ec3dc0ff4ed3"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "itemId": "WAREHOUSEName"
+                                            },
+                                            "designerId": "23a6a9a8-b074-420d-bece-dbc283a4df4e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "34d3d15c-2028-4da0-9251-6f7f63b44748",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "钢种："
+                                            },
+                                            "designerId": "c3ad4848-a3e6-4c66-b509-a0e2c808bad1"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "itemId": "steelGrade"
+                                            },
+                                            "designerId": "a7640aa0-b976-44cf-8ea6-25f482192b80"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "64e72283-a39d-4647-9910-c03cccd761cc",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "规格："
+                                            },
+                                            "designerId": "d63feed5-8b6e-4724-82d7-2692237aeb44"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "itemId": "standard"
+                                            },
+                                            "designerId": "726ce208-eb3c-4940-8098-eb2f0d9a1a3e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "6563e80e-d0ca-4c0a-af86-1697f75c5afb",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "重量："
+                                            },
+                                            "designerId": "5f3d9244-528b-4cd4-bd98-a879b1104655"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "itemId": "weight"
+                                            },
+                                            "designerId": "4614e8af-1855-4f16-80b0-4a3cb341d246"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "1245a265-4d16-4249-b742-8c98b7c4fc77",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "垛位号："
+                                            },
+                                            "designerId": "f68b3d60-4983-40f9-bcd7-15983c820568"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "itemId": "slotId"
+                                            },
+                                            "designerId": "2a20b1ec-fbba-4fe8-a7ec-885816ad70c5"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": true,
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "b693ccfa-0e1f-41f3-9211-4910c3de085b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "库存状态："
+                                            },
+                                            "designerId": "fedf02c7-1ec9-42b1-99f1-8b63c3c06a07"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "designerId": "d15012bb-b85a-493b-bb51-850633f24881"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 50,
+                                "itemId": "doFeedingButton",
+                                "margin": "0 5",
+                                "text": "投料",
+                                "width": 65
+                            },
+                            "designerId": "ac182666-ad34-42ed-816d-ef49eda6b0dc",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMybutton8Tap",
+                                        "implHandler": [
+                                            "var item = button.up('unplanFeedingItem');\r",
+                                            "var currRecord = item.getRecord();\r",
+                                            "// Ext.Viewport.setMasked({\r",
+                                            "//     xtype: 'loadmask',\r",
+                                            "//     fullscreen:true,\r",
+                                            "//     message: '正在投料，请稍候......'\r",
+                                            "// });\r",
+                                            "\r",
+                                            "var unplannedFeeding = button.up('unplannedFeeding');\r",
+                                            "var productionLineSelectField = unplannedFeeding.down('#productionLineSelectField').getValue();\r",
+                                            "console.log('productionLineSelectField = '+productionLineSelectField);\r",
+                                            "\r",
+                                            "\r",
+                                            "var obj = {};\r",
+                                            "obj.matId= currRecord.get('matId');\r",
+                                            "obj.inventoryStatus= currRecord.get('inventoryStatus');\r",
+                                            "obj.matWidth= currRecord.get('matWidth');\r",
+                                            "obj.matThickness= currRecord.get('matThickness');\r",
+                                            "obj.matWeight= currRecord.get('matWeight');\r",
+                                            "obj.steelGrade= currRecord.get('steelGrade');\r",
+                                            "obj.warehouseId= currRecord.get('warehouseId');\r",
+                                            "obj.warehouseName = currRecord.get('warehouseName');\r",
+                                            "obj.slotId= currRecord.get('slotId');\r",
+                                            "obj.maxlayer= currRecord.get('maxlayer');\r",
+                                            "obj.stateOut = currRecord.get('stateOut');\r",
+                                            "obj.version = currRecord.get('version');\r",
+                                            "obj.createdDt = currRecord.get('createdDt');\r",
+                                            "obj.sid = currRecord.get('sid');\r",
+                                            "\r",
+                                            "// obj.produceLine= currRecord.get('produceLine');\r",
+                                            "// obj.rsId= currRecord.get('rsId');\r",
+                                            "// obj.zoneName= currRecord.get('zoneName');\r",
+                                            "// obj.soWidth= currRecord.get('soWidth');\r",
+                                            "// obj.soThickness= currRecord.get('soThickness');\r",
+                                            "// obj.rzWidth= currRecord.get('rzWidth');\r",
+                                            "// obj.rzThickness = currRecord.get('rzThickness');\r",
+                                            "// obj.matMass = currRecord.get('matMass');\r",
+                                            "// obj.stgId = currRecord.get('stgId');\r",
+                                            "// obj.pos = currRecord.get('pos');\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "/*\r",
+                                            " \"matId\": \"1510111112020\",\r",
+                                            " \"inventoryStatus\": \"RAW_MAT_RECEIVED\",\r",
+                                            " \"matWidth\": 1480,\r",
+                                            " \"matThickness\": 4,\r",
+                                            " \"matWeight\": 27,\r",
+                                            " \"steelGrade\": \"M3A33\",\r",
+                                            " \"warehouseId\": \"YL\",\r",
+                                            " \"warehouseName\": \"\\u539f\\u6599\\u5e93\",\r",
+                                            " \"slotId\": \"YL01-C-03-08\",\r",
+                                            " \"maxlayer\": 2,\r",
+                                            " \"stateOut\": \"1\",\r",
+                                            " \"version\": 1,\r",
+                                            " \"createdDt\": \"2015-11-18T15: 03: 39\",\r",
+                                            " \"sid\": \"Sgai.model.wtm.unplanFeed.UnplanFeedModel-68\",\r",
+                                            " \"createdBy\": \"\",\r",
+                                            " \"createdTimestamp\": null,\r",
+                                            " \"updatedBy\": \"\",\r",
+                                            " \"updatedDt\": null,\r",
+                                            " \"updatedTimestamp\": null\r",
+                                            "**/\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "var str = Ext.encode(obj);\r",
+                                            "console.log(str);\r",
+                                            "if (Ext.os.is('Android')) {\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        url:rootUrl+'/wtm/unplan-feed!saveFeed.action',\r",
+                                            "        method:'POST',\r",
+                                            "        timeout:5000,\r",
+                                            "        params: {\r",
+                                            "            'detaillist': str,\r",
+                                            "            'produceLine':productionLineSelectField\r",
+                                            "        },\r",
+                                            "        success: function(conn, response, options, eOpts) {\r",
+                                            "            console.log('success');\r",
+                                            "            var text = conn.responseText;\r",
+                                            "            var obj = Ext.decode(text);\r",
+                                            "            console.log('conn = ',conn.responseText);\r",
+                                            "            if (obj.success) {\r",
+                                            "                //提交后的动作\r",
+                                            "                var feedingDataView = button.up('#feedingDataView');\r",
+                                            "                feedingDataView.getStore().load();\r",
+                                            "            }\r",
+                                            "            window.plugins.toast.show(obj.message, 'long', 'center',\r",
+                                            "                                      function(a){console.log('toast success: ' + a);},\r",
+                                            "                                      function(b){console.log('toast error: ' + b);});\r",
+                                            "            Ext.Viewport.setMasked(false);\r",
+                                            "\r",
+                                            "        },\r",
+                                            "        failure: function(conn, response, options, eOpts) {\r",
+                                            "            window.plugins.toast.show('连接异常！', 'long', 'center',\r",
+                                            "                                      function(a){console.log('toast success: ' + a);},\r",
+                                            "                                      function(b){console.log('toast error: ' + b);});\r",
+                                            "            Ext.Viewport.setMasked(false);\r",
+                                            "\r",
+                                            "        }\r",
+                                            "    });\r",
+                                            "} else {\r",
+                                            "    Ext.Ajax.request({\r",
+                                            "        url:rootUrl+'/wtm/unplan-feed!saveFeed.action',\r",
+                                            "        method:'POST',\r",
+                                            "        timeout:5000,\r",
+                                            "        params: {\r",
+                                            "            'detaillist': str,\r",
+                                            "            'produceLine':productionLineSelectField\r",
+                                            "        },\r",
+                                            "        success: function(conn, response, options, eOpts) {\r",
+                                            "            console.log('success');\r",
+                                            "            var text = conn.responseText;\r",
+                                            "            var obj = Ext.decode(text);\r",
+                                            "            console.log('conn = ',conn.responseText);\r",
+                                            "            if (obj.success) {\r",
+                                            "                //提交后的动作\r",
+                                            "                var feedingDataView = button.up('#feedingDataView');\r",
+                                            "                feedingDataView.getStore().load();\r",
+                                            "            }\r",
+                                            "            Ext.Msg.alert('消息',obj.message,Ext.emptyFn);\r",
+                                            "            Ext.Viewport.setMasked(false);\r",
+                                            "\r",
+                                            "        },\r",
+                                            "        failure: function(conn, response, options, eOpts) {\r",
+                                            "            Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);\r",
+                                            "            Ext.Viewport.setMasked(false);\r",
+                                            "\r",
+                                            "        }\r",
+                                            "    });\r",
+                                            "}\r",
+                                            ""
+                                        ],
+                                        "name": "tap"
+                                    },
+                                    "designerId": "54360e77-b10f-40e0-a430-8fb1074d9bbe"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

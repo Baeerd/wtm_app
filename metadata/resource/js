@@ -1,0 +1,13 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js",
+        "url": "resources/js/hxf.js"
+    },
+    "designerId": "238e845e-c992-4788-aa4b-f6d3060079d2"
+}

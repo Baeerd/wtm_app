@@ -1,0 +1,77 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[\r",
+            "    {\r",
+            "        key: \"轧后库\",\r",
+            "        nextField: \"ZH\",\r",
+            "        value: \"ZH\"\r",
+            "    }\r",
+            "]"
+        ],
+        "designer|userClassName": "WAREHOUSEJsonStore",
+        "model": "WAREHOUSEModel",
+        "storeId": "WAREHOUSEJsonStore"
+    },
+    "designerId": "5f9487bb-24b7-4e19-b2ab-dd95639391e9",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "WAREHOUSEAjaxProxy"
+            },
+            "designerId": "4347cf4c-86bf-4b0e-90e3-c0b836f24d35",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "WAREHOUSEJsonReader",
+                        "rootProperty": "items"
+                    },
+                    "designerId": "0a6b8e8c-518a-47c9-a247-c386d85321aa"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreLoad",
+                "implHandler": [
+                    "console.log('WAREHOUSE_HALLJsonStore = ',records);\r",
+                    "var WAREHOUSE_HALLJsonStore = Ext.getStore('WAREHOUSE_HALLJsonStore');\r",
+                    "WAREHOUSE_HALLJsonStore.setParams({\r",
+                    "    tableName: 'V_MD_WAREHOUSE_HALL',\r",
+                    "    displayField: 'HALL_NAME',\r",
+                    "    valueField:'HALL_ID',\r",
+                    "    filterName:'WAREHOUSE_ID',\r",
+                    "    filterValue:Ext.getStore('WAREHOUSEJsonStore').first().get('nextField')\r",
+                    "});\r",
+                    "WAREHOUSE_HALLJsonStore.load();"
+                ],
+                "name": "load"
+            },
+            "designerId": "b9981417-7c1c-430e-94ea-3ff1ca7d9cb7"
+        }
+    ]
+}

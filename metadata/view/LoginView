@@ -1,0 +1,779 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "login_view_bg"
+        ],
+        "container|align": "center",
+        "container|pack": "center",
+        "designer|userAlias": "loginview",
+        "designer|userClassName": "LoginView",
+        "id": "loginView",
+        "layout": "vbox",
+        "style": null
+    },
+    "designerId": "9072446d-4a5a-4e48-b866-2e1f4f081025",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "height": "70%",
+                "id": "loginForm",
+                "layout": "vbox",
+                "scrollable": "vertical",
+                "width": "100%"
+            },
+            "designerId": "c5f9367b-5615-46a4-8041-1bafd939ea62",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "login_view_form_bg"
+                        ],
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": 250,
+                        "layout": "vbox",
+                        "width": "90%"
+                    },
+                    "designerId": "fa3b867c-f3e8-4839-b826-fbbae6152e0c",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_line"
+                                ],
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "height": "20%",
+                                "layout": "hbox",
+                                "width": "90%"
+                            },
+                            "designerId": "cf94c953-784c-427b-aea3-b1eab51d8753",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 20,
+                                        "src": "resources/images/username_icon.png",
+                                        "width": 20
+                                    },
+                                    "designerId": "26c2703c-986d-484c-b6b7-9dc76383f61d"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "base_font_family"
+                                        ],
+                                        "html": "用户名",
+                                        "margin": "0 5"
+                                    },
+                                    "designerId": "c7e06bdf-22b2-4506-8d5f-e2600299e2fc"
+                                },
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "textfield_cls"
+                                        ],
+                                        "inputCls": "select_input",
+                                        "itemId": "userName",
+                                        "label": null,
+                                        "layout|flex": 1
+                                    },
+                                    "designerId": "c4188cd1-4f64-49f5-b29b-a65fd98bce10"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_line"
+                                ],
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "height": "20%",
+                                "layout": "hbox",
+                                "width": "90%"
+                            },
+                            "designerId": "a3f16944-8f77-46e0-a792-eaa29d41cd11",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 20,
+                                        "src": "resources/images/password_icon.png",
+                                        "width": 20
+                                    },
+                                    "designerId": "5a8f9f37-b92b-4ea0-88a2-766a6083f903"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "base_font_family"
+                                        ],
+                                        "html": "密码",
+                                        "margin": "0 5"
+                                    },
+                                    "designerId": "f76d4d7b-40da-46dc-83cf-c5d0d8c71d46"
+                                },
+                                {
+                                    "type": "Ext.field.Password",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "textfield_cls"
+                                        ],
+                                        "inputCls": "select_input",
+                                        "itemId": "passWord",
+                                        "label": null,
+                                        "layout|flex": 1
+                                    },
+                                    "designerId": "5bd657b4-e176-49a6-a5e2-2bfe79fe2120"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_line"
+                                ],
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "height": "20%",
+                                "hidden": true,
+                                "layout": "hbox",
+                                "width": "90%"
+                            },
+                            "designerId": "e46d85d2-386c-4589-8dec-6ab22896949e",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 20,
+                                        "src": "resources/images/time.png",
+                                        "width": 20
+                                    },
+                                    "designerId": "1d362916-e6ff-4a2b-aee9-1d6daaaeec9c"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "base_font_family"
+                                        ],
+                                        "html": "班时",
+                                        "margin": "0 5"
+                                    },
+                                    "designerId": "9fd55b88-6955-49d6-ac69-41e143538ca9"
+                                },
+                                {
+                                    "type": "Ext.field.Select",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "textfield_cls"
+                                        ],
+                                        "inputCls": "select_input",
+                                        "label": null,
+                                        "layout|flex": 1,
+                                        "options": [
+                                            "[\r",
+                                            "    {text: '白班',  value: 'first'},\r",
+                                            "    {text: '中班', value: 'second'},\r",
+                                            "    {text: '晚班',  value: 'third'}\r",
+                                            "]"
+                                        ],
+                                        "style": null
+                                    },
+                                    "designerId": "941e9854-47ec-48df-bdbf-60f6759bf37c"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_line"
+                                ],
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "height": "20%",
+                                "layout": "hbox",
+                                "width": "90%"
+                            },
+                            "designerId": "19261712-600d-477c-907d-1c30b47df289",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 20,
+                                        "src": "resources/images/classes.png",
+                                        "width": 20
+                                    },
+                                    "designerId": "7442c824-f4f8-482b-b8fa-281d56d7bccb"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "base_font_family"
+                                        ],
+                                        "html": "班次",
+                                        "margin": "0 5"
+                                    },
+                                    "designerId": "26b03298-e4e1-4c5f-851f-f9d01c909b32"
+                                },
+                                {
+                                    "type": "Ext.field.Select",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "textfield_cls"
+                                        ],
+                                        "inputCls": "select_input",
+                                        "itemId": "crewSelect",
+                                        "label": null,
+                                        "layout|flex": 1,
+                                        "options": [
+                                            "[\r",
+                                            "    {text: '甲班',  value: '1'},\r",
+                                            "    {text: '乙班',  value: '2'},\r",
+                                            "    {text: '丙班',  value: '3'},\r",
+                                            "    {text: '丁班',  value: '4'}\r",
+                                            "]"
+                                        ],
+                                        "usePicker": [
+                                            "false"
+                                        ]
+                                    },
+                                    "designerId": "8eaf05b5-4c0f-4078-a5bf-3c687eff7abd"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "login_button"
+                        ],
+                        "height": 50,
+                        "itemId": "loginButton",
+                        "margin": "20  0 0 0",
+                        "text": null,
+                        "width": "90%"
+                    },
+                    "designerId": "6d5ac150-d386-479f-9333-13045ea831dd",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onLoginButtonTap",
+                                "implHandler": [
+                                    "Ext.Viewport.setMasked({\r",
+                                    "    xtype: 'loadmask',\r",
+                                    "    fullscreen:true,\r",
+                                    "    message: '请稍候......'\r",
+                                    "});\r",
+                                    "var root = button.up('#root');\r",
+                                    "var loginView = button.up('#loginView');\r",
+                                    "var userName = loginView.down('#userName').getValue();\r",
+                                    "var passWord = loginView.down('#passWord').getValue();\r",
+                                    "var crewId = loginView.down('#crewSelect').getValue() ;\r",
+                                    "console.log('userName = '+userName+',passWord = '+passWord+',crewId = ',crewId);\r",
+                                    "// if (Ext.os.is('Android')) {\r",
+                                    "//     window.plugins.toast.show('Hello there!', 'long', 'center',\r",
+                                    "//                               function(a){console.log('toast success: ' + a);},\r",
+                                    "//                               function(b){console.log('toast error: ' + b);});\r",
+                                    "// }\r",
+                                    "var state = '';\r",
+                                    "if (Ext.os.is('Android')) {\r",
+                                    "    //     state = navigator.connection.type;\r",
+                                    "    //     console.log(\"state:\");\r",
+                                    "    //     console.log(state);\r",
+                                    "    //     console.log('Connection.NONE = '+Connection.NONE);\r",
+                                    "    //     if (state===Connection.NONE) {\r",
+                                    "    //         window.plugins.toast.show('无网络！', 'long', 'center',\r",
+                                    "    //                                   function(a){console.log('toast success: ' + a);},\r",
+                                    "    //                                   function(b){console.log('toast error: ' + b);});\r",
+                                    "    //         Ext.Viewport.setMasked(false);\r",
+                                    "    //     } else {\r",
+                                    "    //         window.plugins.toast.show('网络正常。', 'long', 'center',\r",
+                                    "    //                                   function(a){console.log('toast success: ' + a);},\r",
+                                    "    //                                   function(b){console.log('toast error: ' + b);});\r",
+                                    "    //     }\r",
+                                    "    if (userName===''||passWord===''){\r",
+                                    "        notice('用户名或密码不能为空！',null,'错误','确定');\r",
+                                    "        Ext.Viewport.setMasked(false);\r",
+                                    "    } else{\r",
+                                    "        //联网登录\r",
+                                    "        Ext.Ajax.request({\r",
+                                    "            //     url: 'system/login!login.action',\r",
+                                    "            //     url:'http://192.168.0.112/mes-wtm-app/system/login!login.action',\r",
+                                    "            //url:'http://10.4.55.204:7001/mes-wtm-app/system/login!login.action',\r",
+                                    "            url:rootUrl+'/system/login!mobileLogin.action',\r",
+                                    "            method:'POST',\r",
+                                    "            timeout:5000,\r",
+                                    "            params: {\r",
+                                    "                username: userName,\r",
+                                    "                password: passWord,\r",
+                                    "                crewId:crewId\r",
+                                    "                //pageCheckCode:pageCheckCode\r",
+                                    "            },\r",
+                                    "            success: function(conn, response, options, eOpts) {\r",
+                                    "                console.log('success');\r",
+                                    "                var text = conn.responseText;\r",
+                                    "                console.log('conn = ',conn.responseText);\r",
+                                    "                var obj = Ext.decode(text);\r",
+                                    "                if (obj.success) {\r",
+                                    "                    //记录当前登录用户\r",
+                                    "                    sessionStorage.username = userName;\r",
+                                    "                    //             var menuView = root.down('#menuView');\r",
+                                    "                    //             var menuView = root.down('#test');\r",
+                                    "                    //             var slide = Ext.create(\"Ext.fx.layout.card.Slide\",{direction:\"left\"});\r",
+                                    "                    //             root.animateActiveItem(menuView,slide);\r",
+                                    "                    //             root.down('#menuView').down('#menuDataView').getStore().load();\r",
+                                    "                    var menuView = Ext.create('SYSM.view.MenuView');\r",
+                                    "                    var root = Ext.getCmp('rootView');\r",
+                                    "                    var items = obj.items;\r",
+                                    "                    //var nemuStore = menuView.down('#menuDataView').getStore();//.load();\r",
+                                    "                    var nemuStore = Ext.getStore('MenuDataViewStore');\r",
+                                    "                    nemuStore.removeAll();\r",
+                                    "                    for(var i in items) {\r",
+                                    "                        if ('RES01' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/dd_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES01'});\r",
+                                    "                        } else if ('RES02' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/rc_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES02'});\r",
+                                    "                        } else if ('RES03' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/rc_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES03'});\r",
+                                    "                        } else if ('RES04' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/ck_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES04'});\r",
+                                    "                        } else if ('RES05' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/ck_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES05'});\r",
+                                    "                        } else if ('RES06' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/pd_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES06'});\r",
+                                    "                        } else if ('RES07' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/wq_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES07'});\r",
+                                    "                        } else if ('RES08' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES08'});\r",
+                                    "                        } else if ('RES09' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES09'});\r",
+                                    "                        } else if ('RES10' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES10'});\r",
+                                    "                        } else if ('RES11' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES11'});\r",
+                                    "                        } else if ('RES12' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES12'});\r",
+                                    "                        } else if ('RES13' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES13'});\r",
+                                    "                        } else if ('RES14' === items[i].resId) {\r",
+                                    "                            nemuStore.add({'image':'resources/images/pd_icon.png',\r",
+                                    "                                           'label':items[i].resName,'RES_ID':'RES14'});\r",
+                                    "                        }\r",
+                                    "                    }\r",
+                                    "                    //                     menuView.down('#menuDataView').getStore().load();\r",
+                                    "                    mainInit();\r",
+                                    "                    root.push(menuView);\r",
+                                    "                    Ext.Viewport.setMasked(false);\r",
+                                    "                    \r",
+                                    "                } else {\r",
+                                    "                    //                     window.plugins.toast.show(obj.message, 'long', 'center',\r",
+                                    "                    //                                               function(a){console.log('toast success: ' + a);},\r",
+                                    "                    //                                               function(b){console.log('toast error: ' + b);});\r",
+                                    "                    notice(obj.message,null,'错误','确定');\r",
+                                    "                    Ext.Viewport.setMasked(false);\r",
+                                    "                    \r",
+                                    "                }\r",
+                                    "                \r",
+                                    "            },\r",
+                                    "            failure: function(conn, response, options, eOpts) {\r",
+                                    "                //                 window.plugins.toast.show('连接异常！', 'long', 'center',\r",
+                                    "                //                                           function(a){console.log('toast success: ' + a);},\r",
+                                    "                //                                           function(b){console.log('toast error: ' + b);});\r",
+                                    "                notice('连接异常！',null,'错误','确定');\r",
+                                    "                Ext.Viewport.setMasked(false);\r",
+                                    "                \r",
+                                    "            }\r",
+                                    "        });\r",
+                                    "    }\r",
+                                    "    \r",
+                                    "    \r",
+                                    "} else {\r",
+                                    "    if (userName===''||passWord===''){\r",
+                                    "        Ext.Msg.alert('错误','用户名或密码不能为空！',Ext.emptyFn);\r",
+                                    "        Ext.Viewport.setMasked(false);\r",
+                                    "    } else{\r",
+                                    "        //联网登录\r",
+                                    "        Ext.Ajax.request({\r",
+                                    "            //     url: 'system/login!login.action',\r",
+                                    "            //     url:'http://192.168.0.112/mes-wtm-app/system/login!login.action',\r",
+                                    "            //url:'http://10.4.55.204:7001/mes-wtm-app/system/login!login.action',\r",
+                                    "            url:rootUrl+'/system/login!mobileLogin.action',\r",
+                                    "            method:'POST',\r",
+                                    "            timeout:5000,\r",
+                                    "            params: {\r",
+                                    "                username: userName,\r",
+                                    "                password: passWord,\r",
+                                    "                crewId:crewId\r",
+                                    "                //pageCheckCode:pageCheckCode\r",
+                                    "            },\r",
+                                    "            success: function(conn, response, options, eOpts) {\r",
+                                    "                console.log('success');\r",
+                                    "                var text = conn.responseText;\r",
+                                    "                console.log('conn = ',conn.responseText);\r",
+                                    "                var obj = Ext.decode(text);\r",
+                                    "                if (obj.success) {\r",
+                                    "                    //记录当前登录用户\r",
+                                    "                    sessionStorage.username = userName;\r",
+                                    "                    //             var menuView = root.down('#menuView');\r",
+                                    "                    //             var menuView = root.down('#test');\r",
+                                    "                    //             var slide = Ext.create(\"Ext.fx.layout.card.Slide\",{direction:\"left\"});\r",
+                                    "                    //             root.animateActiveItem(menuView,slide);\r",
+                                    "                    //             root.down('#menuView').down('#menuDataView').getStore().load();\r",
+                                    "                    var menuView = Ext.create('SYSM.view.MenuView');\r",
+                                    "                    var root = Ext.getCmp('rootView');\r",
+                                    "                    /*\r",
+                                    "                {\r",
+                                    "                image: 'resources/images/rc_icon.png',\r",
+                                    "                label: '下线入库'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/rc_icon.png',\r",
+                                    "                label: '酸轧入库'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/ck_icon.png',\r",
+                                    "                label: '原料出库'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/ck_icon.png',\r",
+                                    "                label: '成品出库'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/dd_icon.png',\r",
+                                    "                label: '扫码倒垛'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/pd_icon.png',\r",
+                                    "                label: '盘库确认'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/wq_icon.png',\r",
+                                    "                label: '成品接收'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/hd_icon.png',\r",
+                                    "                label: '标签核对'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/hd_icon.png',\r",
+                                    "                label: '有计划投料'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/hd_icon.png',\r",
+                                    "                label: '无计划投料'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/hd_icon.png',\r",
+                                    "                label: '卸料回库'\r",
+                                    "            },\r",
+                                    "            {\r",
+                                    "                image: 'resources/images/hd_icon.png',\r",
+                                    "                label: '发运备料'\r",
+                                    "            }\r",
+                                    "                */\r",
+                                    "                var items = obj.items;\r",
+                                    "                //var nemuStore = menuView.down('#menuDataView').getStore();//.load();\r",
+                                    "                var nemuStore = Ext.getStore('MenuDataViewStore');//.load();\r",
+                                    "                nemuStore.removeAll();\r",
+                                    "                for(var i in items) {\r",
+                                    "                    if ('RES01' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/dd_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES01'});\r",
+                                    "                    } else if ('RES02' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/rc_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES02'});\r",
+                                    "                    } else if ('RES03' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/rc_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES03'});\r",
+                                    "                    } else if ('RES04' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/ck_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES04'});\r",
+                                    "                    } else if ('RES05' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/ck_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES05'});\r",
+                                    "                    } else if ('RES06' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/pd_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES06'});\r",
+                                    "                    } else if ('RES07' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/wq_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES07'});\r",
+                                    "                    } else if ('RES08' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES08'});\r",
+                                    "                    } else if ('RES09' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES09'});\r",
+                                    "                    } else if ('RES10' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES10'});\r",
+                                    "                    } else if ('RES11' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES11'});\r",
+                                    "                    } else if ('RES12' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES12'});\r",
+                                    "                    } else if ('RES13' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/hd_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES13'});\r",
+                                    "                    } else if ('RES14' === items[i].resId) {\r",
+                                    "                        nemuStore.add({'image':'resources/images/pd_icon.png',\r",
+                                    "                                       'label':items[i].resName,'RES_ID':'RES14'});\r",
+                                    "                    }\r",
+                                    "                }\r",
+                                    "                //                 nemuStore.load();\r",
+                                    "                mainInit();\r",
+                                    "                root.push(menuView);\r",
+                                    "                Ext.Viewport.setMasked(false);\r",
+                                    "            } else {\r",
+                                    "                Ext.Msg.alert('错误',obj.message,Ext.emptyFn);\r",
+                                    "                Ext.Viewport.setMasked(false);\r",
+                                    "                \r",
+                                    "            }\r",
+                                    "            \r",
+                                    "        },\r",
+                                    "        failure: function(conn, response, options, eOpts) {\r",
+                                    "            Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);\r",
+                                    "            Ext.Viewport.setMasked(false);\r",
+                                    "            \r",
+                                    "        }\r",
+                                    "    });\r",
+                                    "    }\r",
+                                    "    \r",
+                                    "}\r",
+                                    "\r",
+                                    "\r",
+                                    "//单机测试\r",
+                                    "// var menuView = root.down('#menuView');\r",
+                                    "// var slide = Ext.create(\"Ext.fx.layout.card.Slide\",{direction:\"left\"});\r",
+                                    "// root.animateActiveItem(menuView,slide);\r",
+                                    "\r",
+                                    "// var menuView = Ext.create('SYSM.view.MenuView');\r",
+                                    "// // var menuView = Ext.create('SYSM.view.TestView');\r",
+                                    "// var root = Ext.getCmp('rootView');\r",
+                                    "// console.log(menuView);\r",
+                                    "// console.log(root);\r",
+                                    "// menuView.down('#menuDataView').getStore().load();\r",
+                                    "// root.push(menuView);"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "3b33af61-f70c-4f4e-a161-6ce8ec528f71"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bottom": 10,
+                "container|align": "center",
+                "container|pack": null,
+                "layout": "hbox",
+                "width": "100%"
+            },
+            "designerId": "c6b1f401-7963-43ef-9736-2c9280ff799f",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "base_font_family"
+                        ],
+                        "html": "CP2016.6.22",
+                        "margin": "0 0 0 30",
+                        "style": "font-size:12px;"
+                    },
+                    "designerId": "d9a65c11-15cb-4b6e-85da-39edc7144a16"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "cls": [
+                            "menu_view_bg",
+                            "base_font_family"
+                        ],
+                        "docked": "right",
+                        "height": null,
+                        "itemId": "mybutton2",
+                        "margin": "0 30 0 0",
+                        "text": "设置"
+                    },
+                    "designerId": "89ba3ecf-d8e2-455d-97b7-11305ee8ca15",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMybutton2Tap",
+                                "implHandler": [
+                                    "var root = Ext.getCmp('rootView');\r",
+                                    "var serverSetting = Ext.create('SYSM.view.ServerSetting');\r",
+                                    "root.push(serverSetting);"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "d4aef395-d050-4989-84a4-f1af7a4004c6"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

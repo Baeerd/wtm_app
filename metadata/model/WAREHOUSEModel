@@ -1,0 +1,50 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "WAREHOUSEModel"
+    },
+    "designerId": "a731bbf7-6010-430d-977e-28ec217a3d94",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "key"
+            },
+            "designerId": "49008bdf-863c-4e5a-8fa0-579e017042e9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "value"
+            },
+            "designerId": "6c1c488b-6f02-4360-abc5-1a8326885a2c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "nextField"
+            },
+            "designerId": "b0fcca86-246f-49d8-bc0c-c3c1dcd950ed"
+        }
+    ]
+}

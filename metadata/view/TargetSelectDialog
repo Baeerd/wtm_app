@@ -1,0 +1,1086 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "callback": [
+            "function(){}"
+        ],
+        "centered": true,
+        "cls": [
+            "target_select_bg"
+        ],
+        "container|align": "center",
+        "designer|userAlias": "targetSelectDialog",
+        "designer|userClassName": "TargetSelectDialog",
+        "height": "80%",
+        "hideOnMaskTap": true,
+        "id": "targetSelectDialog",
+        "layout": "vbox",
+        "modal": true,
+        "padding": "2%",
+        "width": "90%"
+    },
+    "configAlternates": {
+        "callback": "object"
+    },
+    "designerId": "704b072b-403f-4db5-8421-ff6fe12c2d95",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "callback",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": null,
+                "container|pack": "end",
+                "layout": "hbox",
+                "width": "100%"
+            },
+            "designerId": "9441142f-a1cd-4773-8f4f-93bb3c8acb8e",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "base_font_family",
+                            "menu_view_bg"
+                        ],
+                        "designer|uiInterfaceName": "small",
+                        "height": 32,
+                        "itemId": "close",
+                        "text": "关闭",
+                        "ui": "small",
+                        "width": 60
+                    },
+                    "designerId": "425fed1b-897a-4547-980b-be65e1f2f169",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onCloseTap",
+                                "implHandler": [
+                                    "// button.up('#targetSelectDialog').destroy();\r",
+                                    "button.up('#targetSelectDialog').hide();"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "48c2787a-3618-4a8c-9fcf-19c6b6f78a55"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": null,
+                "container|pack": null,
+                "layout": "hbox",
+                "margin": "5 0",
+                "width": "100%"
+            },
+            "designerId": "f98e3b2c-c560-408f-9285-5e97fdf5346e",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": null,
+                        "height": null,
+                        "layout": "hbox",
+                        "layout|flex": 1,
+                        "margin": "0 1",
+                        "width": "32%"
+                    },
+                    "designerId": "695b3f35-5b63-4b20-912e-0204b4bdaa61",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "库",
+                                "margin": "0 5"
+                            },
+                            "designerId": "559958b2-80e1-4c80-81d2-7513743e96ae"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": null,
+                                "cls": [
+                                    "blue_border"
+                                ],
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "style": null,
+                                "width": null
+                            },
+                            "designerId": "7d5efc12-36ff-43e2-8a01-d5cd76f71765",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Select",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "displayField": "key",
+                                        "inputCls": "small_select_input",
+                                        "itemId": "WAREHOUSESelectField",
+                                        "label": null,
+                                        "layout|flex": 1,
+                                        "store": "WAREHOUSEJsonStore",
+                                        "usePicker": [
+                                            "false"
+                                        ],
+                                        "valueField": "nextField"
+                                    },
+                                    "designerId": "af2b054b-1ebc-4cdc-9377-ff5908f065ee",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onWAREHOUSESelectFieldChange",
+                                                "implHandler": [
+                                                    "var WAREHOUSE_HALLJsonStore = Ext.getStore('WAREHOUSE_HALLJsonStore');\r",
+                                                    "WAREHOUSE_HALLJsonStore.removeAll();\r",
+                                                    "WAREHOUSE_HALLJsonStore.setParams({\r",
+                                                    "    tableName: 'V_MD_WAREHOUSE_HALL',\r",
+                                                    "    displayField: 'HALL_NAME',\r",
+                                                    "    valueField:'HALL_ID',\r",
+                                                    "    filterName:'WAREHOUSE_ID',\r",
+                                                    "    filterValue:newValue\r",
+                                                    "});\r",
+                                                    "WAREHOUSE_HALLJsonStore.load({\r",
+                                                    "    callback:function(){\r",
+                                                    "//         var str = localStorage.WAREHOUSE;\r",
+                                                    "//         var obj = Ext.decode(str);\r",
+                                                    "//         if (obj) {\r",
+                                                    "// //             console.log('WAREHOUSESelectField = '+obj.WAREHOUSESelectField);\r",
+                                                    "// //             console.log('WAREHOUSE_HALLSelectField = '+obj.WAREHOUSE_HALLSelectField);\r",
+                                                    "// //             console.log('WAREHOUSE_HALL_ZONESelectField = '+obj.WAREHOUSE_HALL_ZONESelectField);\r",
+                                                    "//             var targetSelectDialog = Ext.getCmp('targetSelectDialog');\r",
+                                                    "// //             console.log('targetSelectDialog = ',targetSelectDialog);\r",
+                                                    "//             if (newValue ===obj.WAREHOUSESelectField) {\r",
+                                                    "//                 targetSelectDialog.down('#WAREHOUSE_HALLSelectField').setValue(obj.WAREHOUSE_HALLSelectField);\r",
+                                                    "//             }\r",
+                                                    "//         }\r",
+                                                    "\r",
+                                                    "    }\r",
+                                                    "});"
+                                                ],
+                                                "name": "change"
+                                            },
+                                            "designerId": "05eb88cd-3d70-490e-be9b-113ae0c65da5"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onWAREHOUSESelectFieldInitialize",
+                                                "implHandler": [
+                                                    "// component.setValue('ZH');\r",
+                                                    "// var WAREHOUSE_HALLJsonStore = Ext.getStore('WAREHOUSE_HALLJsonStore');\r",
+                                                    "// WAREHOUSE_HALLJsonStore.setParams({\r",
+                                                    "//     tableName: 'V_MD_WAREHOUSE_HALL',\r",
+                                                    "//     displayField: 'HALL_NAME',\r",
+                                                    "//     valueField:'HALL_ID',\r",
+                                                    "//     filterName:'WAREHOUSE_ID',\r",
+                                                    "//     filterValue:'ZH'\r",
+                                                    "// });\r",
+                                                    "// WAREHOUSE_HALLJsonStore.load();"
+                                                ],
+                                                "name": "initialize"
+                                            },
+                                            "designerId": "da779014-7c19-48be-a527-05c44e95f2ca"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": null,
+                        "layout": "hbox",
+                        "layout|flex": 1,
+                        "width": "32%"
+                    },
+                    "designerId": "d000defe-638d-4f3d-8ddd-6bed0d5fa0e8",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "跨",
+                                "margin": "0 5"
+                            },
+                            "designerId": "dad29dd9-06b0-4e1b-b82a-dfc450eecf5f"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "blue_border",
+                                "layout|flex": 1,
+                                "style": null,
+                                "width": null
+                            },
+                            "designerId": "8700171e-bc4b-42c8-8b86-8751f04c899c",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Select",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "displayField": "key",
+                                        "inputCls": "small_select_input",
+                                        "itemId": "WAREHOUSE_HALLSelectField",
+                                        "label": null,
+                                        "store": "WAREHOUSE_HALLJsonStore",
+                                        "usePicker": [
+                                            "false"
+                                        ]
+                                    },
+                                    "designerId": "65d863d5-7bc8-47a3-aaab-ac7901504697",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onWAREHOUSE_HALLSelectFieldChange",
+                                                "implHandler": [
+                                                    "var WAREHOUSE_HALL_ZONEJsonStore = Ext.getStore('WAREHOUSE_HALL_ZONEJsonStore');\r",
+                                                    "WAREHOUSE_HALL_ZONEJsonStore.removeAll();\r",
+                                                    "WAREHOUSE_HALL_ZONEJsonStore.setParams({\r",
+                                                    "    tableName: 'V_MD_WAREHOUSE_HALL_ZONE',\r",
+                                                    "    displayField: 'ZONE_NAME',\r",
+                                                    "    valueField:'ZONE_ID',\r",
+                                                    "    filterName:'HALL_ID',\r",
+                                                    "    filterValue:newValue\r",
+                                                    "});\r",
+                                                    "WAREHOUSE_HALL_ZONEJsonStore.load({\r",
+                                                    "    callback:function(){\r",
+                                                    "//         var str = localStorage.WAREHOUSE;\r",
+                                                    "//         var obj = Ext.decode(str);\r",
+                                                    "//         if (obj) {\r",
+                                                    "// //             console.log('WAREHOUSESelectField = '+obj.WAREHOUSESelectField);\r",
+                                                    "// //             console.log('WAREHOUSE_HALLSelectField = '+obj.WAREHOUSE_HALLSelectField);\r",
+                                                    "// //             console.log('WAREHOUSE_HALL_ZONESelectField = '+obj.WAREHOUSE_HALL_ZONESelectField);\r",
+                                                    "//             var targetSelectDialog = Ext.getCmp('targetSelectDialog');\r",
+                                                    "// //             console.log('targetSelectDialog = ',targetSelectDialog);\r",
+                                                    "//             if (newValue ===obj.WAREHOUSE_HALLSelectField) {\r",
+                                                    "//                 targetSelectDialog.down('#WAREHOUSE_HALL_ZONESelectField').setValue(obj.WAREHOUSE_HALL_ZONESelectField);\r",
+                                                    "//             }\r",
+                                                    "//         }\r",
+                                                    "\r",
+                                                    "    }\r",
+                                                    "});\r",
+                                                    "// console.log(newValue);\r",
+                                                    "//     Ext.getStore('WAREHOUSE_HALLJsonStore').first().get('nextField');"
+                                                ],
+                                                "name": "change"
+                                            },
+                                            "designerId": "d4d1775f-1fda-4a60-b846-15afba8f4023"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": null,
+                "container|pack": null,
+                "layout": "hbox",
+                "margin": "5 0",
+                "width": "100%"
+            },
+            "designerId": "c4cf14c7-be48-4757-948b-7ce62a6a232b",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": null,
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "width": "50%"
+                    },
+                    "designerId": "07eb7959-3a44-4733-b6f6-f603e8649ced",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "区",
+                                "margin": "0 5"
+                            },
+                            "designerId": "0a35fd49-2a3a-4ca6-a00e-0226b6077a1c"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "blue_border",
+                                "layout|flex": 1,
+                                "style": null,
+                                "width": null
+                            },
+                            "designerId": "8e060afd-95b4-4297-afda-811fa3d58a05",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Select",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "displayField": "key",
+                                        "inputCls": "small_select_input",
+                                        "itemId": "WAREHOUSE_HALL_ZONESelectField",
+                                        "label": null,
+                                        "store": "WAREHOUSE_HALL_ZONEJsonStore",
+                                        "usePicker": [
+                                            "false"
+                                        ]
+                                    },
+                                    "designerId": "d8150d2d-f078-4fce-8132-51fddce22329"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": null,
+                        "hidden": false,
+                        "layout": "hbox",
+                        "layout|flex": 1,
+                        "width": "32%"
+                    },
+                    "designerId": "6dff0f70-2296-47d1-b105-ea971249ceb2",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "行",
+                                "margin": "0 5"
+                            },
+                            "designerId": "57f8e228-8039-4d7a-943f-693f3d88d0eb"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "blue_border",
+                                "layout|flex": 1,
+                                "style": null,
+                                "width": null
+                            },
+                            "designerId": "83ad2390-7bae-47e0-ba72-8fc4b7ce0588",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "small_select_input",
+                                        "itemId": "rowNumField",
+                                        "label": null
+                                    },
+                                    "designerId": "d235bea7-1223-4fde-aa9b-996b89ea2453"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": null,
+                "container|pack": null,
+                "hidden": false,
+                "layout": "hbox",
+                "margin": "5 0",
+                "width": "100%"
+            },
+            "designerId": "b287da18-080c-46e4-86c2-82857d510e6c",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": null,
+                        "hidden": false,
+                        "layout": "hbox",
+                        "layout|flex": 1,
+                        "width": "32%"
+                    },
+                    "designerId": "36558999-6fe7-4b47-9b6c-f38e6b2b15ff",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "位",
+                                "margin": "0 5"
+                            },
+                            "designerId": "afbeadbe-1d43-471a-8243-ab97dc63bf0b"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "blue_border",
+                                "layout|flex": 1,
+                                "style": null,
+                                "width": null
+                            },
+                            "designerId": "0ab0453a-0a32-4c19-9f50-fd3f9445a6d5",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Number",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "small_select_input",
+                                        "itemId": "locationNoField",
+                                        "label": null
+                                    },
+                                    "designerId": "bbddc000-387f-4c1a-a4aa-45f64b721e3e"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "baseCls": "light_blue_border",
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": null,
+                        "layout": "hbox",
+                        "width": "50%"
+                    },
+                    "designerId": "041a794d-7627-4eab-9a59-eb23ae56c58c",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "hidden": true,
+                                "html": "层",
+                                "margin": "0 5"
+                            },
+                            "designerId": "4f237fc6-a590-44c7-be62-0e5a5aeb2742"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": "blue_border",
+                                "layout|flex": 1,
+                                "margin": "0 0 0 25",
+                                "style": null,
+                                "width": null
+                            },
+                            "designerId": "d5ffbd31-9401-4592-9b46-6ed4072d97c2",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Select",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "small_select_input",
+                                        "itemId": "stateIn",
+                                        "label": null,
+                                        "margin": null,
+                                        "options": [
+                                            "[\r",
+                                            "    {text: '可用',  value: 1},\r",
+                                            "    {text: '全部', value: 0}\r",
+                                            "]"
+                                        ],
+                                        "usePicker": [
+                                            "false"
+                                        ]
+                                    },
+                                    "designerId": "6118aed6-2512-4053-9487-49ba51a82487"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": null,
+                "container|pack": null,
+                "layout": "hbox",
+                "width": "100%"
+            },
+            "designerId": "3d1aa1d6-50b2-436c-b9c9-7a21060bd0f3",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "base_font_family",
+                            "menu_view_bg"
+                        ],
+                        "designer|uiInterfaceName": "small",
+                        "height": 32,
+                        "itemId": "search",
+                        "text": "查询",
+                        "ui": "small",
+                        "width": 60
+                    },
+                    "designerId": "c05424f5-38a7-40fc-993b-72cc3e533fac",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onSearchTap",
+                                "implHandler": [
+                                    "var dialog = button.up('#targetSelectDialog');\r",
+                                    "var dataview = dialog.down('#dataView');\r",
+                                    "var store = dataview.getStore();//.load();\r",
+                                    "var WAREHOUSESelectField = dialog.down('#WAREHOUSESelectField');\r",
+                                    "var WAREHOUSE_HALLSelectField = dialog.down('#WAREHOUSE_HALLSelectField');\r",
+                                    "var WAREHOUSE_HALL_ZONESelectField = dialog.down('#WAREHOUSE_HALL_ZONESelectField');\r",
+                                    "var stateIn = dialog.down('#stateIn');\r",
+                                    "var rowNum = dialog.down('#rowNumField').getValue();\r",
+                                    "var locationNo = dialog.down('#locationNoField').getValue();\r",
+                                    "\r",
+                                    "console.log('rowNum = '+rowNum+'stateIn = '+stateIn.getValue());\r",
+                                    "if (isNaN(rowNum)) {\r",
+                                    "    if (Ext.os.is('Android')) {\r",
+                                    "        window.plugins.toast.show('行号只能为数字！', 'long', 'center',\r",
+                                    "                                  function(a){console.log('toast success: ' + a);},\r",
+                                    "                                  function(b){console.log('toast error: ' + b);});\r",
+                                    "    } else {\r",
+                                    "        Ext.Msg.alert('错误','行号只能为数字！',Ext.emptyFn);\r",
+                                    "    }\r",
+                                    "} else {\r",
+                                    "    console.log(WAREHOUSESelectField.getValue()+\r",
+                                    "                ','+WAREHOUSE_HALLSelectField.getValue()+\r",
+                                    "                ','+WAREHOUSE_HALL_ZONESelectField.getValue()+','+rowNum);\r",
+                                    "    store.setParams({\r",
+                                    "        //     WAREHOUSE_ID:WAREHOUSESelectField.getValue(),\r",
+                                    "        'qm.stateIn':stateIn.getValue(),\r",
+                                    "        'qm.hallId':WAREHOUSE_HALLSelectField.getValue(),\r",
+                                    "        'qm.zoneId':WAREHOUSE_HALL_ZONESelectField.getValue(),\r",
+                                    "//         'page':1,\r",
+                                    "        'qm.rowNo':rowNum,\r",
+                                    "        'qm.locationNo':locationNo\r",
+                                    "\r",
+                                    "    });\r",
+                                    "//     var listPaging = new Ext.plugin.ListPaging({\r",
+                                    "//         autoPaging: true,\r",
+                                    "//         loadMoreText: '加载更多',\r",
+                                    "//         noMoreRecordsText: '没有更多库位',\r",
+                                    "//         type: 'listpaging'\r",
+                                    "//     });\r",
+                                    "//     dataview.setPlugins([]);\r",
+                                    "//     var listPaging = Ext.create('Ext.plugin.ListPaging',{\r",
+                                    "//         autoPaging: true,\r",
+                                    "//         loadMoreText: '加载更多',\r",
+                                    "//         noMoreRecordsText: '没有更多库位',\r",
+                                    "//         type: 'listpaging'\r",
+                                    "//     });\r",
+                                    "//     dataview.setPlugins(listPaging);\r",
+                                    "//     store.load();\r",
+                                    "    store.loadPage(1);\r",
+                                    "//     console.log(store);\r",
+                                    "    var currentView = button.up('#targetSelectDialog');\r",
+                                    "    var WAREHOUSESelectField = currentView.down('#WAREHOUSESelectField');\r",
+                                    "    var WAREHOUSE_HALLSelectField = currentView.down('#WAREHOUSE_HALLSelectField');\r",
+                                    "    var WAREHOUSE_HALL_ZONESelectField = currentView.down('#WAREHOUSE_HALL_ZONESelectField');\r",
+                                    "    var result = {\r",
+                                    "        WAREHOUSESelectField:WAREHOUSESelectField.getValue(),\r",
+                                    "        WAREHOUSE_HALLSelectField:WAREHOUSE_HALLSelectField.getValue(),\r",
+                                    "        WAREHOUSE_HALL_ZONESelectField:WAREHOUSE_HALL_ZONESelectField.getValue()\r",
+                                    "    };\r",
+                                    "    var resultStr = Ext.encode(result);\r",
+                                    "    localStorage.WAREHOUSE = resultStr;\r",
+                                    "    console.log('WAREHOUSE = '+localStorage.WAREHOUSE);\r",
+                                    "    var rowNumField = currentView.down('#rowNumField');\r",
+                                    "    localStorage.rowNum = rowNumField.getValue();\r",
+                                    "    var locationNoField = currentView.down('#locationNoField');\r",
+                                    "    localStorage.locationNo = locationNoField.getValue();\r",
+                                    "    var stateIn = currentView.down('#stateIn');\r",
+                                    "    localStorage.stateIn = stateIn.getValue();\r",
+                                    "}\r",
+                                    "\r",
+                                    ""
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "7d3173ee-4609-4b97-b42e-4923e4d960cd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "base_font_family",
+                            "menu_view_bg"
+                        ],
+                        "designer|uiInterfaceName": "small",
+                        "height": 32,
+                        "itemId": "reset",
+                        "margin": "0 5",
+                        "text": "重置",
+                        "ui": "small",
+                        "width": 60
+                    },
+                    "designerId": "4787dd1d-3a1a-4ba6-b2d2-a35a95949156",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onResetTap",
+                                "implHandler": [
+                                    "var dialog = button.up('#targetSelectDialog');\r",
+                                    "var store = dialog.down('#dataView').getStore();//.load();\r",
+                                    "var WAREHOUSESelectField = dialog.down('#WAREHOUSESelectField');\r",
+                                    "var WAREHOUSE_HALLSelectField = dialog.down('#WAREHOUSE_HALLSelectField');\r",
+                                    "var WAREHOUSE_HALL_ZONESelectField = dialog.down('#WAREHOUSE_HALL_ZONESelectField');\r",
+                                    "console.log(WAREHOUSESelectField.getValue()+\r",
+                                    "            ','+WAREHOUSE_HALLSelectField.getValue()+\r",
+                                    "            ','+WAREHOUSE_HALL_ZONESelectField.getValue());\r",
+                                    "store.setParams({\r",
+                                    "//     WAREHOUSE_ID:WAREHOUSESelectField.getValue(),\r",
+                                    "    'qm.stateIn':1,\r",
+                                    "    'qm.hallId':WAREHOUSE_HALLSelectField.getValue(),\r",
+                                    "    'qm.zoneId':WAREHOUSE_HALL_ZONESelectField.getValue()\r",
+                                    "});\r",
+                                    "store.removeAll();\r",
+                                    "// console.log(store);"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "4d45dfe2-2677-4226-9323-9716b159443d"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout": "hbox",
+                "margin": "5 0 0 0",
+                "width": "100%"
+            },
+            "designerId": "ee3d5f05-9759-4ea6-92e6-2d55424a86d0",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "table_head",
+                            "base_font_family"
+                        ],
+                        "html": "垛位号",
+                        "layout|flex": 3
+                    },
+                    "designerId": "bd5a283d-1920-44c0-b1d0-abf845945f94"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "table_head",
+                            "base_font_family"
+                        ],
+                        "html": "层",
+                        "layout|flex": 1
+                    },
+                    "designerId": "91e91f89-c764-49cd-b75f-144e9d7f549b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "dataView",
+                "layout|flex": 1,
+                "store": "TargetSelectStore",
+                "width": "100%"
+            },
+            "designerId": "816d6c7b-9924-40ca-ba5a-42739a3131e9",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "itemTpl",
+                        "implHandler": [
+                            "<tpl if=\"stateIn==1\">\r",
+                            "<div style=\" width:75%; text-align:center;float:left; \">{slotId}</div>\r",
+                            "<div style=\" width:25%; text-align:center;float:left; \">{layer}</div>\r",
+                            "</tpl>\r",
+                            "<tpl if=\"stateIn==0\">\r",
+                            "    <div style=\" width:75%; text-align:center;float:left;background-color:red; \">{slotId}</div>\r",
+                            "<div style=\" width:25%; text-align:center;float:left;background-color:red; \">{layer}</div>\r",
+                            "</tpl>"
+                        ]
+                    },
+                    "designerId": "1ab9f534-db5e-483b-846e-0f3002a4143a"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onDataViewItemTap",
+                        "implHandler": [
+                            "var targetSelectDialog = dataview.up('#targetSelectDialog');\r",
+                            "var func = targetSelectDialog.getCallback();\r",
+                            "func(record.get('slotId'),record.get('slotSid'),record.get('layer'),record.get('stateIn'));\r",
+                            "// console.log('stateIn = '+record.get('stateIn'));\r",
+                            "// dataview.up('#targetSelectDialog').destroy();\r",
+                            "dataview.up('#targetSelectDialog').hide();"
+                        ],
+                        "name": "itemtap"
+                    },
+                    "designerId": "364866c6-1174-46d6-bf21-45770e24d2fa"
+                },
+                {
+                    "type": "Ext.plugin.ListPaging",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoPaging": true,
+                        "loadMoreText": "加载更多",
+                        "noMoreRecordsText": "没有更多库位"
+                    },
+                    "designerId": "381fce24-ddcb-4f90-86d0-1ef0e6a4500e"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTargetSelectDialogHide",
+                "implHandler": [
+                    "// console.log('targetSelect hide');\r",
+                    "// var store = component.down('#dataView').getStore();\r",
+                    "// store.removeAll();\r",
+                    "// store.setParams({});\r",
+                    "// component.destroy();"
+                ],
+                "name": "hide"
+            },
+            "designerId": "9557829f-bce1-498f-a545-f66d02f16e67"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onTargetSelectDialogInitialize",
+                "implHandler": [
+                    "// Ext.getStore('WAREHOUSEJsonStore').load({\r",
+                    "//     callback:function(){\r",
+                    "        \r",
+                    "\r",
+                    "//     }\r",
+                    "// });\r",
+                    "// var store = component.down('#dataView').getStore();\r",
+                    "// store.removeAll();\r",
+                    "\r",
+                    "// var str = localStorage.WAREHOUSE;\r",
+                    "// var obj = Ext.decode(str);\r",
+                    "// var currentView = Ext.getCmp('targetSelectDialog');\r",
+                    "// if (obj) {\r",
+                    "//     //             console.log('WAREHOUSESelectField = '+obj.WAREHOUSESelectField);\r",
+                    "//     //             console.log('WAREHOUSE_HALLSelectField = '+obj.WAREHOUSE_HALLSelectField);\r",
+                    "//     //             console.log('WAREHOUSE_HALL_ZONESelectField = '+obj.WAREHOUSE_HALL_ZONESelectField);\r",
+                    "// //     console.log('targetSelectDialog = ',currentView);\r",
+                    "//     currentView.down('#WAREHOUSESelectField').setValue(obj.WAREHOUSESelectField);\r",
+                    "// }\r",
+                    "// if (localStorage.rowNum) {\r",
+                    "//     var rowNumField = currentView.down('#rowNumField');\r",
+                    "//     rowNumField.setValue(localStorage.rowNum);\r",
+                    "// }\r",
+                    "// if (localStorage.locationNo) {\r",
+                    "//     var locationNoField = currentView.down('#locationNoField');\r",
+                    "//     locationNoField.setValue(localStorage.locationNo);\r",
+                    "// }\r",
+                    "// if (localStorage.stateIn) {\r",
+                    "//     var stateIn = currentView.down('#stateIn');\r",
+                    "//     stateIn.setValue(localStorage.stateIn);\r",
+                    "// }"
+                ],
+                "name": "initialize"
+            },
+            "designerId": "537b087a-7c51-45d1-a0b1-66012cdeafb7"
+        }
+    ]
+}

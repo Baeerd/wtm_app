@@ -1,0 +1,1 @@
+function _dea374e520c9157dee81c2d250c0b70a0c12f62e(){};document.addEventListener("deviceready",onDeviceReady,false);function onDeviceReady(){document.addEventListener("backbutton",onBackKeyDown,false)}function onBackKeyDown(){var a=Ext.getCmp("rootView");a.pop()};

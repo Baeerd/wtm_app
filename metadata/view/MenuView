@@ -1,0 +1,317 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "menu_view_bg"
+        ],
+        "designer|userAlias": "menuview",
+        "designer|userClassName": "MenuView",
+        "id": "menuView",
+        "layout": "vbox"
+    },
+    "designerId": "3677e7e4-7c53-4c55-91ee-65a214e2f7ef",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 80,
+                "layout": "fit"
+            },
+            "designerId": "45f83668-ef41-4cb9-ac6b-b90b5c45e4b0",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": 80,
+                        "layout": "hbox",
+                        "zIndex": 1
+                    },
+                    "designerId": "23179133-6a04-4196-81c2-df1446aff68b",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family",
+                                    "title_font_size"
+                                ],
+                                "html": "首页"
+                            },
+                            "designerId": "874599dc-1a39-484f-ac8d-8774f004c03d"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": 80,
+                        "layout": "hbox",
+                        "zIndex": 2
+                    },
+                    "designerId": "49957609-26d6-4e25-8255-a3fad3508ee5",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1
+                            },
+                            "designerId": "169b6184-f196-4596-b02f-39e1efa946a0"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "designerId": "cfaa0b77-5d27-440f-baee-70f5aa45df75",
+                            "cn": [
+                                {
+                                    "type": "Ext.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "menu_item_bg",
+                                            "base_font_family"
+                                        ],
+                                        "docked": null,
+                                        "itemId": "mybutton8",
+                                        "margin": "0 5 0 auto",
+                                        "text": "注销"
+                                    },
+                                    "designerId": "939df980-d941-4dba-801a-a67433ec2ac0",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMybutton8Tap",
+                                                "implHandler": [
+                                                    "// var root = button.up('#root');\r",
+                                                    "// var loginView = root.down('#loginView');\r",
+                                                    "// var slide = Ext.create(\"Ext.fx.layout.card.Slide\",{direction:\"right\"});\r",
+                                                    "// root.animateActiveItem(loginView,slide);\r",
+                                                    "\r",
+                                                    "console.log('menu pop');\r",
+                                                    "var root = Ext.getCmp('rootView');\r",
+                                                    "root.pop();\r",
+                                                    "//销毁垛位选择界面，，下次使用时重新初始化\r",
+                                                    "var targetSelectDialog = Ext.getCmp('targetSelectDialog');\r",
+                                                    "if (targetSelectDialog) {\r",
+                                                    "    //     console.log(targetSelectDialog);\r",
+                                                    "    targetSelectDialog.destroy();\r",
+                                                    "} else {\r",
+                                                    "\r",
+                                                    "}"
+                                                ],
+                                                "name": "tap"
+                                            },
+                                            "designerId": "4743d79f-23b2-42ad-b857-49d12a39550a"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.dataview.DataView",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "defaultType": "menuDataItem",
+                "inline": [
+                    "true"
+                ],
+                "itemId": "menuDataView",
+                "layout|flex": 1,
+                "padding": "2%",
+                "scrollable": "vertical",
+                "store": "MenuDataViewStore",
+                "useComponents": true
+            },
+            "designerId": "daac2a64-09cb-405f-98e3-20591879c45a",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "buffer": null,
+                        "fn": "onMenuDataViewItemTap",
+                        "implHandler": [
+                            "Ext.Viewport.setMasked({\r",
+                            "    xtype: 'loadmask',\r",
+                            "    message: '请稍候......'\r",
+                            "});\r",
+                            "// var label = record.get('label');\r",
+                            "var label = record.get('RES_ID');\r",
+                            "var root = dataview.up('#root');\r",
+                            "var root = Ext.getCmp('rootView');\r",
+                            "var slide = Ext.create(\"Ext.fx.layout.card.Slide\",{direction:\"left\"});\r",
+                            "console.log('label = '+label);\r",
+                            "var targetView;\r",
+                            "\r",
+                            "setTimeout(function(){\r",
+                            "//     if ('下线入库' ===label) {\r",
+                            "    if ('RES02' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.PutawayView');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//     else if ('卸料回库' ===label) {\r",
+                            "    else if ('RES11' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.BackToLib');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//     else if ('发运备料' ===label) {\r",
+                            "    else if ('RES12' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.ShipmentPreparation');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//     else if ('酸轧入库' ===label) {\r",
+                            "    else if ('RES03' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.PLTCMPutawayView');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//     else if ('扫码倒垛' ===label) {\r",
+                            "    else if ('RES01' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.TargetChangeingView');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//         else if ('原料出库' ===label) {\r",
+                            "    else if ('RES04' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.EXWarehouseMaterial');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//         else if ('成品出库' ===label) {\r",
+                            "    else if ('RES05' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.EXWarehouseProduct');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//             else if ('盘库确认' ===label) {\r",
+                            "    else if ('RES06' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.StoreCheck');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//                 else if ('成品接收' ===label) {\r",
+                            "    else if ('RES07' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.RealRight');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//                     else if ('标签核对' ===label) {\r",
+                            "    else if ('RES08' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.TagCheck');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//                         else if ('有计划投料' ===label) {\r",
+                            "    else if ('RES09' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.PlannedFeeding');\r",
+                            "        var PlanNumberJsonStore = Ext.getStore('PlanNumberJsonStore');\r",
+                            "        PlanNumberJsonStore.removeAll();\r",
+                            "        Ext.getStore('PlannedFeedingJsonStore').removeAll();\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "//                             else if ('无计划投料' ===label) {\r",
+                            "    else if ('RES10' ===label) {\r",
+                            "        targetView = Ext.create('SYSM.view.UnplannedFeeding');\r",
+                            "        Ext.getStore('unplannedFeedingJsonStore').removeAll();\r",
+                            "        root.push(targetView);\r",
+                            "    }else if ('RES14' ===label) {\r",
+                            "        targetView = Ext.create('widget.simpleStoreCheck');\r",
+                            "        root.push(targetView);\r",
+                            "    }\r",
+                            "\r",
+                            "    Ext.Viewport.setMasked(false);\r",
+                            "},1000);\r",
+                            ""
+                        ],
+                        "name": "itemtap"
+                    },
+                    "designerId": "da026cf1-a572-41d9-a89e-b7bfc9c51ae7"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMenuViewHide",
+                "implHandler": [
+                    "// component.destroy();"
+                ],
+                "name": "hide"
+            },
+            "designerId": "27cfbfd5-1543-4e25-9744-f8cc10d67924"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMenuViewDestroy",
+                "implHandler": [
+                    "console.log('destroy');"
+                ],
+                "name": "destroy"
+            },
+            "designerId": "9a833b95-9566-46fb-9f13-612273dbd430"
+        }
+    ]
+}

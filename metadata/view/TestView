@@ -1,0 +1,175 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "testView",
+        "designer|userClassName": "TestView",
+        "id": "testView"
+    },
+    "designerId": "8f50313f-495a-4714-b5aa-47de951c89be",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "123213213"
+            },
+            "designerId": "ddeed595-4712-4b14-90c3-7227945c72fc",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "mybutton16",
+                        "text": "My"
+                    },
+                    "designerId": "5185b687-7206-4e42-9f40-5392ea3dd236",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMybutton16Tap",
+                                "implHandler": [
+                                    "var me = this;\r",
+                                    "Ext.Ajax.request({\r",
+                                    "//     url: 'system/login!login.action',\r",
+                                    "//     url:'http://192.168.0.112/mes-wtm-app/system/login!login.action',\r",
+                                    "    url:'http://10.4.55.204:7001/mes-wtm-app/combo/combo/findComboBoxValue.action',\r",
+                                    "    method:'POST',\r",
+                                    "    params: {\r",
+                                    "//         //库\r",
+                                    "//         tableName: 'V_MD_WAREHOUSE',\r",
+                                    "//         displayField: 'WAREHOUSE_NAME',\r",
+                                    "//         valueField:'WAREHOUSE_ID',\r",
+                                    "        \r",
+                                    "        //跨\r",
+                                    "        tableName: 'V_MD_WAREHOUSE_HALL',\r",
+                                    "        displayField: 'HALL_NAME',\r",
+                                    "        valueField:'HALL_ID',\r",
+                                    "\r",
+                                    "        nextField:me.nextField,\r",
+                                    "//         filterName:me.filterName,\r",
+                                    "//         nextField:'YL',\r",
+                                    "//         filterName:'YL',\r",
+                                    "        filterName:'WAREHOUSE_ID',\r",
+                                    "        filterValue:'YL',\r",
+                                    "//         filterValue:me.filterValue,\r",
+                                    "        filterValueLike:me.filterValueLike\r",
+                                    "        //pageCheckCode:pageCheckCode\r",
+                                    "    },\r",
+                                    "    success: function(conn, response, options, eOpts) {\r",
+                                    "        console.log('success');\r",
+                                    "        var text = conn.responseText;\r",
+                                    "        var obj = Ext.decode(text);\r",
+                                    "        console.log('conn = ',conn.responseText);\r",
+                                    "//         if (obj.success) {\r",
+                                    "//             var menuView = root.down('#menuView');\r",
+                                    "//             var slide = Ext.create(\"Ext.fx.layout.card.Slide\",{direction:\"left\"});\r",
+                                    "//             root.animateActiveItem(menuView,slide);\r",
+                                    "//             root.down('#menuView').down('#menuDataView').getStore().load();\r",
+                                    "//         } else {\r",
+                                    "//             Ext.Msg.alert('错误','用户名或密码错误！',Ext.emptyFn);\r",
+                                    "//         }\r",
+                                    "\r",
+                                    "    },\r",
+                                    "    failure: function(conn, response, options, eOpts) {\r",
+                                    "        console.log('failure');\r",
+                                    "        var text = conn.responseText;\r",
+                                    "        var obj = Ext.decode(text);\r",
+                                    "        console.log('conn = ',conn.responseText);\r",
+                                    "        Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);\r",
+                                    "    }\r",
+                                    "});"
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "0b258e93-b7f5-451a-bcb9-3ff4697b2f54"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "docked": null,
+                        "text": "MyButton7"
+                    },
+                    "designerId": "c7492b52-a92a-4c7b-8df9-58686bd5d50c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "mybutton26",
+                "text": "MyButton26"
+            },
+            "designerId": "a730caa2-f2b8-4a87-a638-3c2b350c8d9b",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onMybutton26Tap",
+                        "implHandler": [
+                            "// var store = Ext.getStore('InventoryCheckStore');\r",
+                            "// var store = Ext.getStore('abcStore');\r",
+                            "var store = Ext.getStore('MyDirectStore');\r",
+                            "\r",
+                            "store.add({\r",
+                            "    slotSid:1\r",
+                            "});\r",
+                            "store.add({\r",
+                            "    slotSid:2\r",
+                            "});\r",
+                            "try\r",
+                            "{\r",
+                            "store.sync();\r",
+                            "}\r",
+                            "catch (e)\r",
+                            "{\r",
+                            " console.log(e);\r",
+                            "}\r",
+                            "\r",
+                            "console.log(store);"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "66434d2b-d729-4616-a14e-6597e61c4ec8"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "RootNavigationView",
+        "id": "rootView",
+        "navigationBar": false
+    },
+    "configAlternates": {
+        "navigationBar": "boolean"
+    },
+    "designerId": "2b7fdc7c-afbe-455d-9618-912d819a1cfd",
+    "cn": [
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onRootViewPush",
+                "implHandler": [
+                    ""
+                ],
+                "name": "push"
+            },
+            "designerId": "9c2a9998-203a-420f-bf91-18a21324950b"
+        }
+    ]
+}

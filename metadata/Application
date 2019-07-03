@@ -1,0 +1,124 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "TargetSelectModel",
+            "MenuDataViewModel",
+            "WAREHOUSEModel",
+            "AbstractModel",
+            "InventoryCheckModel",
+            "PlannedFeedingModel"
+        ],
+        "name": "SYSM",
+        "requires": [
+            "Ext.MessageBox"
+        ],
+        "stores": [
+            "TargetSelectStore",
+            "MenuDataViewStore",
+            "WAREHOUSEJsonStore",
+            "WAREHOUSE_HALLJsonStore",
+            "WAREHOUSE_HALL_ZONEJsonStore",
+            "InventoryCheckStore",
+            "abcStore",
+            "MyDirectStore",
+            "UnplannedWAREHOUSEJsonStore",
+            "ProductionLineJsonStore",
+            "PlanNumberJsonStore",
+            "PlannedFeedingJsonStore",
+            "UnplannedProductionLineJsonStore",
+            "UnplannedFeedingJsonStore"
+        ],
+        "views": [
+            "LoginView",
+            "MenuView",
+            "MenuDataItem",
+            "RootCard",
+            "TargetSelectDialog",
+            "CutInboundView",
+            "TargetChangeingView",
+            "TestView",
+            "EXWarehouseMaterial",
+            "StoreCheck",
+            "RealRight",
+            "TagCheck",
+            "RootNavigationView",
+            "EXWarehouseProduct",
+            "ServerSetting",
+            "UnplannedFeeding",
+            "FeedingDetail",
+            "PlannedFeeding",
+            "FeedingItem",
+            "PLTCMPutawayView",
+            "BackToLib",
+            "ShipmentPreparation",
+            "UnplanFeedingItem",
+            "SimpleStoreCheck",
+            "XS00List"
+        ]
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    "//rootUrl = 'http://10.4.55.204:7001/mes-wtm-app';\r",
+                    "//rootUrl = 'http://192.168.0.112:8080/mes-wtm-app';\r",
+                    "// if (localStorage.url===undefined||\r",
+                    "//     localStorage.url===null||localStorage.url===''){\r",
+                    "//     rootUrl = 'http://192.168.0.109:8080/mes-wtm-app';\r",
+                    "// } else {\r",
+                    "//     rootUrl = localStorage.url;\r",
+                    "// }\r",
+                    "var url = localStorage.url;\r",
+                    "var port = localStorage.port;\r",
+                    "var serverName = localStorage.serverName;\r",
+                    "if (url===undefined ||\r",
+                    "    url === null || url=== ''||\r",
+                    "    port===undefined ||\r",
+                    "    port === null || port=== ''||\r",
+                    "    serverName===undefined ||\r",
+                    "    serverName === null || serverName=== ''\r",
+                    "   ) {\r",
+                    "//     localStorage.url = '192.168.0.109';\r",
+                    "//     localStorage.port = '8080';\r",
+                    "    localStorage.url = '10.4.55.80';\r",
+                    "    localStorage.port = '7001';\r",
+                    "    localStorage.serverName = 'mes-wtm-app';\r",
+                    "//     url = '192.168.0.109';\r",
+                    "//     port = '8080';\r",
+                    "    url = '10.4.55.80';\r",
+                    "    port = '7001';\r",
+                    "    serverName = 'mes-wtm-app';\r",
+                    "\r",
+                    "}\r",
+                    "rootUrl = 'http://'+url+':'+port+'/'+serverName;\r",
+                    "console.log('rootUrl = '+rootUrl);\r",
+                    "//rootUrl = http://10.4.55.204:7001/mes-wtm-app\r",
+                    "\r",
+                    "// mainInit();\r",
+                    "\r",
+                    "root = Ext.create('SYSM.view.RootNavigationView');//\r",
+                    "root.push(Ext.create('SYSM.view.LoginView'));\r",
+                    "// root.push(Ext.create('SYSM.view.TestView'));\r",
+                    "// root.push(Ext.create('SYSM.view.MenuView'));\r",
+                    "Ext.Viewport.add(root);\r",
+                    ""
+                ]
+            },
+            "designerId": "d8d0aa91-25d5-4d0a-abae-164eb1b25315"
+        }
+    ]
+}

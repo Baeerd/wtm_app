@@ -1,0 +1,67 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "WAREHOUSE_HALLJsonStore",
+        "model": "WAREHOUSEModel",
+        "storeId": "WAREHOUSE_HALLJsonStore"
+    },
+    "designerId": "f40b23e4-58ed-4fb9-914c-bed88f5d94a1",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "WAREHOUSEAjaxProxy"
+            },
+            "designerId": "faedfdf2-ce86-4d6b-b10f-082fe9903c35",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "WAREHOUSEJsonReader",
+                        "rootProperty": "items"
+                    },
+                    "designerId": "a01d9853-3f20-42b4-bd44-7accd090a247"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onJsonstoreLoad",
+                "implHandler": [
+                    "var WAREHOUSE_HALL_ZONEJsonStore = Ext.getStore('WAREHOUSE_HALL_ZONEJsonStore');\r",
+                    "WAREHOUSE_HALL_ZONEJsonStore.setParams({\r",
+                    "    tableName: 'V_MD_WAREHOUSE_HALL_ZONE',\r",
+                    "    displayField: 'ZONE_NAME',\r",
+                    "    valueField:'ZONE_ID',\r",
+                    "    filterName:'HALL_ID',\r",
+                    "    filterValue:Ext.getStore('WAREHOUSE_HALLJsonStore').first().get('nextField')\r",
+                    "});\r",
+                    "WAREHOUSE_HALL_ZONEJsonStore.load();"
+                ],
+                "name": "load"
+            },
+            "designerId": "155a7215-276f-4266-8627-a77554efed1a"
+        }
+    ]
+}

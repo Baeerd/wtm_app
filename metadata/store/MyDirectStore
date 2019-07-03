@@ -1,0 +1,55 @@
+{
+    "type": "directstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyDirectStore",
+        "model": "InventoryCheckModel",
+        "storeId": "MyDirectStore"
+    },
+    "designerId": "99cf6109-0a7b-4c5f-90a5-665f07e8f415",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{\r",
+                    "    read:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!findByPage.action',\r",
+                    "    create:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!add.action',\r",
+                    "    update:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!update.action',\r",
+                    "    destroy:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!destroy.action'   \r",
+                    "}"
+                ]
+            },
+            "designerId": "f7f4d75e-5621-4764-9f58-7dc36ff62ebf",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "87a7257b-a60d-4895-8ac7-bd9e113771d0"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "c2cb8559-de8a-4e5c-b616-650540f50db4"
+                }
+            ]
+        }
+    ]
+}

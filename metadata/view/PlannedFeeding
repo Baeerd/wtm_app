@@ -1,0 +1,618 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "plannedFeeding",
+        "designer|userClassName": "PlannedFeeding",
+        "id": "plannedFeeding",
+        "layout": "vbox"
+    },
+    "designerId": "1d5ec640-af73-4c2c-b418-acb2232856f1",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 80,
+                "layout": "fit"
+            },
+            "designerId": "4b8ea70b-2786-403d-84c9-06776f241c62",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "menu_view_bg"
+                        ],
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": 80,
+                        "itemId": "titleLayout",
+                        "layout": "hbox",
+                        "padding": "0 20",
+                        "zIndex": null
+                    },
+                    "designerId": "e434128d-ad56-4400-aa05-cf58c79c6922",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family",
+                                    "title_font_size",
+                                    "title_cls"
+                                ],
+                                "html": "有计划投料"
+                            },
+                            "designerId": "a03946d4-be44-4e2b-9d9a-b75c4d666bfd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 80,
+                        "itemId": "buttonLayout",
+                        "layout": "hbox",
+                        "zIndex": null
+                    },
+                    "designerId": "d7d17974-bc80-45c3-9d93-4ff05f5326c5",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family"
+                                ],
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "height": "100%",
+                                "itemId": "mycontainer1",
+                                "layout": "hbox",
+                                "margin": "0 0 0 10",
+                                "minWidth": 70
+                            },
+                            "designerId": "8169a3ae-96b7-4dc8-9ca4-432818acbf7b",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMycontainer1Initialize",
+                                        "implHandler": [
+                                            "component.element.on('tap',function(){\r",
+                                            "//     var root = component.up('#root');\r",
+                                            "//     var menuView = root.down('#menuView');\r",
+                                            "//     var slide = Ext.create(\"Ext.fx.layout.card.Slide\",{direction:\"right\"});\r",
+                                            "//     root.animateActiveItem(menuView,slide);\r",
+                                            "    var root = Ext.getCmp('rootView');\r",
+                                            "    root.pop();\r",
+                                            "});\r",
+                                            ""
+                                        ],
+                                        "name": "initialize"
+                                    },
+                                    "designerId": "6718c763-f236-4672-8c42-6eb6c1ec042c"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "4119c2da-312a-4997-8170-8c0a025eb75b",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "<"
+                                            },
+                                            "designerId": "a04fd94e-f999-4915-8e97-b3d57c638d88"
+                                        },
+                                        {
+                                            "type": "Ext.Container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "html": "返回"
+                                            },
+                                            "designerId": "a366ca5f-96aa-4620-9b55-e2386d851365"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "designerId": "c0eaa347-01fd-4804-9809-1e7a9827b11c"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family"
+                                ],
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "height": "100%",
+                                "hidden": true,
+                                "html": null,
+                                "itemId": "mycontainer67",
+                                "layout": "hbox",
+                                "margin": "0 10 0 0",
+                                "minWidth": 70
+                            },
+                            "designerId": "1f4f253d-a0b6-494d-b981-170a8ed241a0",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMycontainer67Initialize",
+                                        "implHandler": [
+                                            "var me = component;//3991206913302\r",
+                                            "component.element.on('tap',function() {\r",
+                                            "    var view = me.up('#putawayView');\r",
+                                            "    var data = view.getData();\r",
+                                            "    var target = view.down('#target');//.getValue();\r",
+                                            "\r",
+                                            "\r",
+                                            "    if (data===null||data===undefined||\r",
+                                            "        data.a===null||data.a===undefined||data.a==='') {\r",
+                                            "        if (Ext.os.is('Android')) {\r",
+                                            "            window.plugins.toast.show('钢卷信息不能为空！', 'long', 'center',\r",
+                                            "                                      function(a){console.log('toast success: ' + a);},\r",
+                                            "                                      function(b){console.log('toast error: ' + b);});\r",
+                                            "        } else {\r",
+                                            "            Ext.Msg.alert('错误','钢卷信息不能为空！',Ext.emptyFn);\r",
+                                            "        }\r",
+                                            "\r",
+                                            "    } else if (target.valueField===null||target.valueField===undefined||target.valueField==='') {\r",
+                                            "        if (Ext.os.is('Android')) {\r",
+                                            "            window.plugins.toast.show('目标垛位不能为空！', 'long', 'center',\r",
+                                            "                                      function(a){console.log('toast success: ' + a);},\r",
+                                            "                                      function(b){console.log('toast error: ' + b);});\r",
+                                            "        } else {\r",
+                                            "            Ext.Msg.alert('错误','目标垛位不能为空！',Ext.emptyFn);\r",
+                                            "        }\r",
+                                            "\r",
+                                            "    } else {\r",
+                                            "        console.log(data.a);\r",
+                                            "        var coil = Ext.decode(data.a);\r",
+                                            "        //     console.log('coil = ' , coil);\r",
+                                            "        //     console.log('username = ' , sessionStorage.username);\r",
+                                            "        //     console.log('target = ' , view.down('#target').getValue());\r",
+                                            "        var obj = {};\r",
+                                            "        obj.matId= coil.items[0].matId;\r",
+                                            "        obj.steelGrade= coil.items[0].steelGrade;\r",
+                                            "        obj.matThickness= coil.items[0].matThickness;\r",
+                                            "        obj.matWidth= coil.items[0].matWidth;\r",
+                                            "        //obj.l4BatchId= coil.items[0].l4BatchNo;\r",
+                                            "        //obj.l4MatId= coil.items[0].l4MatNo;\r",
+                                            "        //obj.soId= coil.items[0].soId;\r",
+                                            "        //obj.soItem= coil.items[0].soItem;\r",
+                                            "        obj.slotId= target.valueField;//自己写\r",
+                                            "        obj.layer= target.layer;\r",
+                                            "        //obj.slotId= view.down('#target').getValue();\r",
+                                            "        obj.matWeight = coil.items[0].matWeight;\r",
+                                            "        obj.produceLine = coil.items[0].produceLine;\r",
+                                            "        obj.produceDate = coil.items[0].produceDate;\r",
+                                            "        obj.hotRollingWidth = coil.items[0].hotRollingWidth;\r",
+                                            "        obj.hotRollingThickness = coil.items[0].hotRollingThickness;\r",
+                                            "        obj.isClosed = coil.items[0].isClosed;\r",
+                                            "        obj.closedReason = coil.items[0].closedReason;\r",
+                                            "        obj.meId = coil.items[0].meId;\r",
+                                            "\r",
+                                            "\r",
+                                            "\r",
+                                            "        var str = Ext.encode(obj);\r",
+                                            "            console.log(str);\r",
+                                            "\r",
+                                            "\r",
+                                            "        Ext.Ajax.request({\r",
+                                            "            //     url: 'system/login!login.action',\r",
+                                            "            //     url:'http://192.168.0.112/mes-wtm-app/wtm/inventory-check!saveRecords.action',\r",
+                                            "            url:rootUrl+'/wtm/downline!saveStorage.action',\r",
+                                            "            method:'POST',\r",
+                                            "            params: {\r",
+                                            "                'detaillist':str\r",
+                                            "            },\r",
+                                            "            success: function(conn, response, options, eOpts) {\r",
+                                            "                console.log('success');\r",
+                                            "                var text = conn.responseText;\r",
+                                            "                var obj = Ext.decode(text);\r",
+                                            "                console.log('conn = ',conn.responseText);\r",
+                                            "                console.log('obj = ',obj);\r",
+                                            "                if (obj.success) {\r",
+                                            "                    if (Ext.os.is('Android')) {\r",
+                                            "                        window.plugins.toast.show(obj.message, 'long', 'center',\r",
+                                            "                                                  function(a){console.log('toast success: ' + a);},\r",
+                                            "                                                  function(b){console.log('toast error: ' + b);});\r",
+                                            "                    } else {\r",
+                                            "                        Ext.Msg.alert('结果',obj.message,Ext.emptyFn);\r",
+                                            "                    }\r",
+                                            "\r",
+                                            "                } else {\r",
+                                            "                    if (Ext.os.is('Android')) {\r",
+                                            "                        window.plugins.toast.show('提交失败！', 'long', 'center',\r",
+                                            "                                                  function(a){console.log('toast success: ' + a);},\r",
+                                            "                                                  function(b){console.log('toast error: ' + b);});\r",
+                                            "                    } else {\r",
+                                            "                       Ext.Msg.alert('错误','提交失败！',Ext.emptyFn);\r",
+                                            "                    }\r",
+                                            "\r",
+                                            "                }\r",
+                                            "\r",
+                                            "            },\r",
+                                            "            failure: function(conn, response, options, eOpts) {\r",
+                                            "                if (Ext.os.is('Android')) {\r",
+                                            "                    window.plugins.toast.show('连接异常！', 'long', 'center',\r",
+                                            "                                              function(a){console.log('toast success: ' + a);},\r",
+                                            "                                              function(b){console.log('toast error: ' + b);});\r",
+                                            "                } else {\r",
+                                            "                    Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);\r",
+                                            "                }\r",
+                                            "\r",
+                                            "            }\r",
+                                            "        });\r",
+                                            "    }\r",
+                                            "\r",
+                                            "});"
+                                        ],
+                                        "name": "initialize"
+                                    },
+                                    "designerId": "21767016-a2e9-4bad-8d2e-c71448f555c2"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "投料"
+                                    },
+                                    "designerId": "c887f0bb-20a4-4a7a-a31b-d880a87b3f93"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "white_bg"
+                ],
+                "container|align": "center",
+                "container|pack": null,
+                "layout": "vbox",
+                "layout|flex": 1,
+                "padding": "10% 2%",
+                "scrollable": "vertical"
+            },
+            "designerId": "84bb8e95-24c5-490f-8c55-77032ba63a98",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": null,
+                        "height": 36,
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "margin": "0 1",
+                        "width": "100%"
+                    },
+                    "designerId": "b166fd3b-8e9a-43e7-8a32-73ecca324919",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "产线",
+                                "margin": null,
+                                "width": 65
+                            },
+                            "designerId": "617055a7-1d02-4922-a883-fdaf767143bd"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": null,
+                                "cls": [
+                                    "light_blue_border",
+                                    "margin_content"
+                                ],
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "style": null,
+                                "width": "30%"
+                            },
+                            "designerId": "8eb32629-941b-4c5c-b289-fbcbb41c4b05",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Select",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "autoSelect": false,
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "displayField": "key",
+                                        "inputCls": "white_select_input",
+                                        "itemId": "productionLineSelectField",
+                                        "label": null,
+                                        "layout|flex": 1,
+                                        "placeHolder": "请选择产线！",
+                                        "store": "ProductionLineJsonStore",
+                                        "valueField": "nextField"
+                                    },
+                                    "designerId": "8ccf0eef-c6ef-4032-845a-97c3548ba52c",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onProductionLineSelectFieldChange",
+                                                "implHandler": [
+                                                    "var PlanNumberJsonStore = Ext.getStore('PlanNumberJsonStore');\r",
+                                                    "PlanNumberJsonStore.setParams({\r",
+                                                    "    tableName: 'v_pes_sequence',\r",
+                                                    "    displayField: 'distinct rs_id',\r",
+                                                    "    valueField:'rs_id',\r",
+                                                    "    filterName:'produce_line',\r",
+                                                    "    filterValue:newValue\r",
+                                                    "});\r",
+                                                    "PlanNumberJsonStore.load();"
+                                                ],
+                                                "name": "change"
+                                            },
+                                            "designerId": "c5432b3c-3824-4033-8f81-c9e43205dbc8"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": null,
+                        "height": 36,
+                        "layout": "hbox",
+                        "layout|flex": null,
+                        "margin": "0 1",
+                        "width": "100%"
+                    },
+                    "designerId": "30b9f6bc-c95a-49f0-a1e4-a08e0a509a26",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "计划号",
+                                "margin": null,
+                                "width": 65
+                            },
+                            "designerId": "5cb6e465-e559-46d1-b10c-cb8d31466759"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "baseCls": null,
+                                "cls": [
+                                    "light_blue_border",
+                                    "margin_content"
+                                ],
+                                "layout": "hbox",
+                                "layout|flex": 1,
+                                "style": null,
+                                "width": "30%"
+                            },
+                            "designerId": "54ff8e9f-8ce9-4da3-b577-0fd4bf51973e",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Select",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "displayField": "key",
+                                        "inputCls": "white_select_input",
+                                        "itemId": "planNumberSelectField",
+                                        "label": null,
+                                        "layout|flex": 1,
+                                        "placeHolder": "请选择计划号！",
+                                        "store": "PlanNumberJsonStore",
+                                        "valueField": "nextField"
+                                    },
+                                    "designerId": "c9392d7e-4289-4b3a-95ba-c6c0aee2fd25",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onPlanNumberSelectFieldChange",
+                                                "implHandler": [
+                                                    "var produceLine = selectfield.up('#plannedFeeding').down('#productionLineSelectField').getValue();\r",
+                                                    "console.log('produceLine = '+produceLine);\r",
+                                                    "if (produceLine === '') {\r",
+                                                    "    produceLine=null;\r",
+                                                    "}\r",
+                                                    "\r",
+                                                    "var PlannedFeedingJsonStore = Ext.getStore('PlannedFeedingJsonStore');\r",
+                                                    "PlannedFeedingJsonStore.setParams({\r",
+                                                    "    'qm.produceLine':produceLine,\r",
+                                                    "    'qm.rsId':newValue\r",
+                                                    "});\r",
+                                                    "PlannedFeedingJsonStore.load();"
+                                                ],
+                                                "name": "change"
+                                            },
+                                            "designerId": "8f58dea6-764e-44dd-8f72-7d9a7e8c87d0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.dataview.DataView",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "defaultType": "feedingItem",
+                        "itemId": "feedingDataView",
+                        "layout|flex": 1,
+                        "margin": "5 0",
+                        "store": "PlannedFeedingJsonStore",
+                        "useComponents": true,
+                        "width": "100%"
+                    },
+                    "designerId": "2800e29c-ac2f-411b-bcc3-1a8136004561"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onPutawayViewHide",
+                "implHandler": [
+                    "// component.destory();"
+                ],
+                "name": "hide"
+            },
+            "designerId": "401f5245-55a4-43d4-9e9f-e45a43d595c3"
+        }
+    ]
+}

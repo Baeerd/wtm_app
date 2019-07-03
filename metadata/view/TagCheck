@@ -1,0 +1,479 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tagcheck",
+        "designer|userClassName": "TagCheck",
+        "id": "tagCheck",
+        "layout": "vbox"
+    },
+    "designerId": "3f402206-6668-4111-ae5f-ec79196077ba",
+    "cn": [
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 80,
+                "layout": "fit"
+            },
+            "designerId": "275babf0-3cf1-4c0a-bed2-ec0a6caedc60",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "menu_view_bg"
+                        ],
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "height": 80,
+                        "itemId": "titileLayout",
+                        "layout": "hbox",
+                        "padding": "0 20"
+                    },
+                    "designerId": "229434e6-c128-49d4-8bda-bb25d712f4f0",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family",
+                                    "title_font_size"
+                                ],
+                                "html": "标签核对"
+                            },
+                            "designerId": "a35d9432-f05f-4bf2-9763-8cefe5557157"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": null,
+                        "itemId": "buttonLayout",
+                        "layout": "hbox"
+                    },
+                    "designerId": "489f1473-4d69-4b4a-8132-753f358cb3a8",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family"
+                                ],
+                                "container|align": "center",
+                                "container|pack": "center",
+                                "height": "100%",
+                                "itemId": "mycontainer61",
+                                "layout": "hbox",
+                                "margin": "0 0 0 10",
+                                "width": 75
+                            },
+                            "designerId": "bc439c8c-f142-4769-8b5c-df065f774a8a",
+                            "cn": [
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "<"
+                                    },
+                                    "designerId": "1d9986d6-aa17-4070-b677-4d0c2430edf4"
+                                },
+                                {
+                                    "type": "Ext.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "返回"
+                                    },
+                                    "designerId": "065ff297-f53b-43af-b344-c43e934bf302"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onMycontainer61Initialize",
+                                        "implHandler": [
+                                            "component.element.on('tap',function(){\r",
+                                            "//     var root = component.up('#root');\r",
+                                            "//     var menuView = root.down('#menuView');\r",
+                                            "//     var slide = Ext.create(\"Ext.fx.layout.card.Slide\",{direction:\"right\"});\r",
+                                            "//     root.animateActiveItem(menuView,slide);\r",
+                                            "    var root = Ext.getCmp('rootView');\r",
+                                            "    root.pop();\r",
+                                            "});\r",
+                                            ""
+                                        ],
+                                        "name": "initialize"
+                                    },
+                                    "designerId": "e28ef51b-1632-4c70-a8c3-14ef2e9fc01a"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "designerId": "46099463-d06d-44ee-ab76-706e71046439"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family"
+                                ],
+                                "hidden": true,
+                                "html": "确认",
+                                "margin": "0 10 0 0"
+                            },
+                            "designerId": "609dc560-9f70-401b-ae94-467c8af0cf64"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "white_bg"
+                ],
+                "container|align": "center",
+                "container|pack": null,
+                "layout": "vbox",
+                "layout|flex": 1,
+                "padding": "10% 2%",
+                "scrollable": "vertical"
+            },
+            "designerId": "708ecda3-c30f-4744-937d-5c0a6cacdd0b",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "二级标签",
+                        "margin": "2 0"
+                    },
+                    "designerId": "8747ca68-4198-434b-803c-ba777e54474f"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 36,
+                        "layout": "hbox",
+                        "margin": "2 0",
+                        "width": "100%"
+                    },
+                    "designerId": "70fe3971-82cb-4cd4-af1e-6001e3afb114",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "钢卷号",
+                                "width": null
+                            },
+                            "designerId": "7e657e94-7ab4-4cf6-ad7e-e39cdf86d472"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "light_blue_border",
+                                    "margin_content"
+                                ],
+                                "height": "100%",
+                                "layout|flex": 1
+                            },
+                            "designerId": "348a8d37-53a7-4c49-95b8-45f8316aabf5",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "white_select_input",
+                                        "itemId": "matIdSecond",
+                                        "label": null
+                                    },
+                                    "designerId": "9ce93b8b-de26-4d4a-828e-3c2e43275300",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMatIdSecondFocus",
+                                                "implHandler": [
+                                                    "var currentView = textfield.up('#tagCheck');\r",
+                                                    "var resultView = currentView.down('#result');\r",
+                                                    "resultView.setHtml('');"
+                                                ],
+                                                "name": "focus"
+                                            },
+                                            "designerId": "8452c80a-b6f2-40f2-b32c-a30ef528641d"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "html": "三级标签",
+                        "margin": "2 0"
+                    },
+                    "designerId": "5daaae80-fa03-4a21-9ebb-f9939d7c3eda"
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "height": 36,
+                        "layout": "hbox",
+                        "margin": "2 0",
+                        "width": "100%"
+                    },
+                    "designerId": "39e91947-ebf6-4b87-af61-2a596338855a",
+                    "cn": [
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "blue_font"
+                                ],
+                                "html": "钢卷号",
+                                "width": null
+                            },
+                            "designerId": "cb91d497-b42d-40da-998e-8c989facc1c3"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "light_blue_border",
+                                    "margin_content"
+                                ],
+                                "height": "100%",
+                                "layout|flex": 1
+                            },
+                            "designerId": "3163a010-ad6b-4f5d-a581-29bedcf4277b",
+                            "cn": [
+                                {
+                                    "type": "Ext.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "cls": [
+                                            "small_textfield_cls"
+                                        ],
+                                        "inputCls": "white_select_input",
+                                        "itemId": "matIdThree",
+                                        "label": null
+                                    },
+                                    "designerId": "b9de02f7-d5d3-4092-a183-a44bc962de6b",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMatIdThreeFocus",
+                                                "implHandler": [
+                                                    "var currentView = textfield.up('#tagCheck');\r",
+                                                    "var resultView = currentView.down('#result');\r",
+                                                    "resultView.setHtml('');"
+                                                ],
+                                                "name": "focus"
+                                            },
+                                            "designerId": "fcbd81f6-0606-4b18-ad25-60b97ba8e378"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "menu_view_bg",
+                            "base_font_family"
+                        ],
+                        "itemId": "mybutton5",
+                        "margin": "10 ",
+                        "text": "比较",
+                        "width": "100%"
+                    },
+                    "designerId": "824d494a-4696-4b7d-b672-144f09f1d0de",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onMybutton4Tap1",
+                                "implHandler": [
+                                    "var currentView = button.up('#tagCheck');\r",
+                                    "var resultView = currentView.down('#result');\r",
+                                    "var matIdSecond = currentView.down('#matIdSecond');\r",
+                                    "var matIdSecondValue = matIdSecond.getValue();\r",
+                                    "var matIdThree = currentView.down('#matIdThree');\r",
+                                    "var matIdThreeValue = matIdThree.getValue();\r",
+                                    "\r",
+                                    "if (matIdSecondValue!=='' && matIdThreeValue!=='' && matIdSecondValue === matIdThreeValue) {\r",
+                                    "    resultView.setHtml('匹配成功');\r",
+                                    "} else {\r",
+                                    "    resultView.setHtml('匹配失败');\r",
+                                    "}\r",
+                                    "\r",
+                                    "\r",
+                                    ""
+                                ],
+                                "name": "tap"
+                            },
+                            "designerId": "1dbe9cbb-ae35-41c5-9ac8-dc2c5399e37e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "cls": [
+                            "big_font"
+                        ],
+                        "html": null,
+                        "itemId": "result"
+                    },
+                    "designerId": "32bf6017-b11c-42c5-b6b6-530bd5debbc0"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "callback": [
+            "function(){}"
+        ],
+        "data": [
+            "[\r",
+            "    {\r",
+            "        string:'ZT01-0-00-00-1'\r",
+            "    },\r",
+            "    {\r",
+            "        string:'LT01-0-00-00-1'\r",
+            "    },\r",
+            "    {\r",
+            "        string:'ZT03-0-00-00-1'\r",
+            "    },\r",
+            "    {\r",
+            "        string:'DX01-0-00-00-1'\r",
+            "    },\r",
+            "    {\r",
+            "        string:'DX02-0-00-00-1'\r",
+            "    }\r",
+            "]"
+        ],
+        "designer|userAlias": "xs00List",
+        "designer|userClassName": "XS00List",
+        "disableSelection": true,
+        "height": 150,
+        "hideOnMaskTap": true,
+        "modal": true,
+        "width": 180
+    },
+    "configAlternates": {
+        "callback": "object"
+    },
+    "designerId": "6f6ca664-9f5f-4ebe-b97e-262cc1812012",
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "callback",
+            "type": "string"
+        }
+    ],
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>{string}</div>"
+                ]
+            },
+            "designerId": "ffc1e327-e3fe-408d-a379-c69d5226e538"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "var callbackFun = dataview.getCallback();\r",
+                    "callbackFun(record.get('string'));\r",
+                    "dataview.destroy();"
+                ],
+                "name": "itemtap"
+            },
+            "designerId": "06e1c84d-da02-4a78-b169-2625a49aca3b"
+        }
+    ]
+}

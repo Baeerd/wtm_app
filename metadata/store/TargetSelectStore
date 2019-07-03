@@ -1,0 +1,44 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TargetSelectStore",
+        "model": "TargetSelectModel",
+        "storeId": "TargetSelectStore"
+    },
+    "designerId": "61e92619-07af-406c-a370-126ae3e6513a",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "http://10.4.55.204:7001/mes-wtm-app/wtm/slot!findSlotSelect.action"
+            },
+            "designerId": "44d12433-f1c4-476f-a0d9-d7e9216da8d1",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "messageProperty": "message",
+                        "rootProperty": "items",
+                        "totalProperty": "totalProperty"
+                    },
+                    "designerId": "33587ba1-7bf1-49b6-8110-0462f0995b06"
+                }
+            ]
+        }
+    ]
+}

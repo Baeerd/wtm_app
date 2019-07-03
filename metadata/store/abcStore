@@ -1,0 +1,55 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "abcStore",
+        "model": "InventoryCheckModel",
+        "storeId": "abcStore"
+    },
+    "designerId": "64f0d0ea-a27b-4770-a0f0-2adf856ef888",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{\r",
+                    "    read:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!findByPage.action',\r",
+                    "    create:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!add.action',\r",
+                    "    update:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!update.action',\r",
+                    "    destroy:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!destroy.action'   \r",
+                    "}"
+                ]
+            },
+            "designerId": "5fd563bd-c533-4e4c-afe7-b31f10e02319",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "0f611c9d-87dc-4c0b-94e5-57db6a823c45"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "e7d2dc0e-3e8b-412c-856f-5d0a03a7dcd1"
+                }
+            ]
+        }
+    ]
+}

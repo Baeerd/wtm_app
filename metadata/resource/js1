@@ -1,0 +1,13 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js1",
+        "url": "resources/js/backButton.js"
+    },
+    "designerId": "576fa5a2-b87e-4bdd-8306-a0b162ec155b"
+}

@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css",
+        "url": "resources/css/hxf.css"
+    },
+    "designerId": "a610cf98-fd16-4b0f-beab-81d9fdc70873"
+}

@@ -1,0 +1,130 @@
+{
+    "type": "Ext.dataview.component.DataItem",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": null,
+        "container|pack": "center",
+        "designer|userAlias": "menuDataItem",
+        "designer|userClassName": "MenuDataItem",
+        "itemCls": null,
+        "layout": "vbox",
+        "margin": "1%",
+        "minHeight": 90,
+        "padding": null,
+        "width": "31%"
+    },
+    "designerId": "74173b56-724b-4358-a956-d238f3f92a40",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "record"
+                ],
+                "fn": "updateRecord",
+                "implHandler": [
+                    "// Provide an implementation to update this container's child items\r",
+                    "var me =this;\r",
+                    "// console.log(me.down('#icon'));\r",
+                    "if (record!==null) {\r",
+                    "//     console.log(record);\r",
+                    "    me.down('#icon').setSrc(record.get('image'));\r",
+                    "    me.down('#label').setHtml(record.get('label'));\r",
+                    "    // me.element.on('tap',function(){\r",
+                    "    // //     console.log(this);\r",
+                    "    //     Ext.Msg.alert('消息', record.get('label'), Ext.emptyFn);\r",
+                    "    // });\r",
+                    "\r",
+                    "    me.element.on('touchstart',function(){\r",
+                    "        //     console.log('touchstart');\r",
+                    "        me.down('#menuDataItemBG').setCls('menu_item_passdown');\r",
+                    "    });\r",
+                    "    me.element.on('touchend',function(){\r",
+                    "        //     console.log('touchend');\r",
+                    "        me.down('#menuDataItemBG').setCls('menu_item_bg');\r",
+                    "    });\r",
+                    "}\r",
+                    ""
+                ]
+            },
+            "designerId": "b0601ab6-a307-473a-9901-cebf3fc41030"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "cls": [
+                    "menu_item_bg"
+                ],
+                "height": null,
+                "itemId": "menuDataItemBG",
+                "layout": "vbox",
+                "width": "100%"
+            },
+            "designerId": "e9191579-f2ca-4f97-8f16-c32ef4060055",
+            "cn": [
+                {
+                    "type": "Ext.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": null,
+                        "layout": "vbox",
+                        "margin": "30 0 0 0"
+                    },
+                    "designerId": "54f5daef-caa0-4349-a39f-da09efaa8a51",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 50,
+                                "itemId": "icon",
+                                "src": " ",
+                                "width": 90
+                            },
+                            "designerId": "40f6f4e5-7cd1-49de-94a2-6e4421fb597e"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "cls": [
+                                    "base_font_family"
+                                ],
+                                "itemId": "label",
+                                "margin": "10 0"
+                            },
+                            "designerId": "3cb95bf9-1e23-44b4-825d-013df5c2de91"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

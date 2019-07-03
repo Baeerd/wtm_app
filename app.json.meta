@@ -1,0 +1,1 @@
+{"_comment":"Please don't edit. This is Architect data.","name":"SYSM","css":[{"path":"resources/css/hxf.css"}],"js":[{"path":"resources/js/hxf.js"},{"path":"resources/js/backButton.js"}],"resources":[],"classpath":"${app.dir}/app,${app.dir}/resources/js/","requires":[]}

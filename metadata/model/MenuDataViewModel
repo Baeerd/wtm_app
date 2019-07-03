@@ -1,0 +1,50 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MenuDataViewModel"
+    },
+    "designerId": "009fd8de-d607-4eb7-8d3e-eb3f9cc149f7",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "image"
+            },
+            "designerId": "2adf9f90-011c-43c8-a22a-c96549733537"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "label"
+            },
+            "designerId": "162c0c35-465b-4be5-b4a1-cf0a32936974"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "RES_ID"
+            },
+            "designerId": "faacd289-e881-484f-b5ee-5c8d7cbb03b5"
+        }
+    ]
+}

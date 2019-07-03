@@ -1,0 +1,60 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "InventoryCheckStore",
+        "model": "InventoryCheckModel",
+        "storeId": "InventoryCheckStore"
+    },
+    "designerId": "a03d481c-5f17-47c7-9bbe-67155e2e3b02",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Direct",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{\r",
+                    "    read:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!findByPage.action',\r",
+                    "    create:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!add.action',\r",
+                    "    update:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!update.action',\r",
+                    "    destroy:'http://10.4.55.204:7001/mes-wtm-app/wtm/inventory-check!destroy.action'   \r",
+                    "}"
+                ]
+            },
+            "designerId": "338caab8-f95c-4ab4-84ab-cc00904ad956",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "messageProperty": "message",
+                        "rootProperty": "items",
+                        "totalProperty": "totalProperty"
+                    },
+                    "designerId": "5fab0fca-26de-4f9b-8291-4358560b0bd5"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "9f830d75-a6ef-40cb-963a-a10a2322c7d0"
+                }
+            ]
+        }
+    ]
+}

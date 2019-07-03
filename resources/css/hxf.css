@@ -1,0 +1,185 @@
+/**********************scroll************************/
+.x-scroll-bar-x.active{
+    width:0px;
+}
+.x-scroll-bar-y.active{
+    width:0px;
+}
+/**********************scroll************************/
+.login_view_bg {
+    background-image:url(./../images/bg.png);
+    background-size:100% 100%;
+}
+.login_view_form_bg {
+    background-image:url(./../images/login_formbg.png);
+    background-size:100% 100%;
+}
+.target_select_bg{
+    background-color:#E5E5E5;
+}
+.white_bg{
+    background-color:white;
+}
+.textfield_cls{
+    height: 32px;
+    max-Height: 24px;
+    min-Height: 0px;
+    min-width: 0px;
+    flex:1;
+    background-color:#3888BB;
+    color:white;
+    margin:0px 0px 0px 10px;
+    color:#f00;font-size:18px;
+}
+
+.select_input{
+   min-height : 0px;
+   height : 32px;
+    padding-left:0px;
+    background-color:#3888BB;
+    color:white;
+}
+.base_font_family {
+    font-family:'微软雅黑';
+    color:#848587;
+}
+.base_backgrond_color {
+    background-color:black;
+}
+.blue_font {
+    font-family:'微软雅黑';
+    color:#0B2A5B;
+    font-size:16px;
+}
+.small_font_size {
+    font-size:18px;
+}
+.big_font {
+    font-family:'微软雅黑';
+    color:#0B2A5B;
+    font-size:50px;
+}
+.base_line{
+    border:solid white;
+    border-top-width:0px;
+	border-right-width:0px;
+	border-bottom-width:1px;
+	border-left-width:0px;
+}
+.login_button{
+    background-image:url(./../images/login_button.png);
+    background-size:100% 100%;
+}
+.menu_view_bg{
+    background-image:url(./../images/menu_bg.png);
+    background-size:100% 100%;
+}
+.title_font_size{
+    font-size:20px;
+}
+.menu_item_bg{
+    background-image:url(./../images/item_bg.png);
+    background-size:100% 100%;
+}
+.menu_item_passdown{
+    background-color:#BAB5DD;
+}
+
+.small_textfield_cls{
+    height: 32px;
+    max-Height: 32px;
+    min-Height: 0px;
+    min-width: 0px;
+    flex:1;
+    /*width:100px;*/
+    background-color:#E5E5E5;
+    margin:0px 0px 0px 0px;
+    color:#f00;font:normal 16px Arial;
+}
+.small_textfield_cls{
+    height: 32px;
+    max-Height: 32px;
+    min-Height: 0px;
+    min-width: 0px;
+    flex:1;
+    /*width:100px;*/
+    background-color:#E5E5E5;
+    margin:0px 0px 0px 0px;
+    color:#f00;font:normal 16px Arial;
+}
+.small_textfield_cls_color_background{
+    height: 32px;
+    max-Height: 32px;
+    min-Height: 0px;
+    min-width: 0px;
+    flex:1;
+    /*width:100px;*/
+    background-color:#E5E5E5;
+    margin:0px 0px 0px 0px;
+    color:#f00;font:normal 16px Arial;
+}
+
+.small_select_input{
+   min-height : 0px;
+   height : 32px;
+    padding-left:0px;
+    background-color:#E5E5E5;
+    color:white;
+    width:50px
+}
+.color_select_input{
+   min-height : 0px;
+   height : 32px;
+    padding-left:0px;
+    background-color:#E5E5E5;
+    width:50px;
+}
+.white_select_input{
+   min-height : 0px;
+   height : 32px;
+    padding-left:0px;
+    background-color:white;
+    width:50px;
+}
+.white_border{
+    border:solid 1px white;
+}
+.light_blue_border{
+    border:solid 1px #E5E5E5;
+}
+.without_light_blue_border{
+    
+}
+.blue_border{
+    border:solid 1px #3888BB;
+}
+.table_head{
+    background-image:url(./../images/menu_bg.png);
+    background-size:100% 100%;
+    text-align:center;
+    border:solid 1px #E5E5E5;
+}
+.margin_content{
+    margin:0px 10px;
+}
+.title_cls{
+    position: relative !important;
+}
+
+.button_normal {
+    background-color:#051839;
+    border:white 3px solid;
+    border-radius:16px;
+}
+.button_press {
+    background-color:#2371AF;
+    border:white 3px solid;
+    border-radius:16px;
+}
+
+.setting {
+    background-image:url(./../images/setting.png);
+    background-color:transparent;
+    border: transparent;
+}
+
