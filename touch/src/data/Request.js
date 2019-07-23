@@ -107,7 +107,7 @@ Ext.define('Ext.data.Request', {
 
         callback: null,
         scope: null,
-        timeout: 30000000,
+        timeout: 8000,
         records: null,
 
         // The following two configurations are only used by Ext.data.proxy.Direct and are just

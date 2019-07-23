@@ -430,7 +430,18 @@ Ext.define('SYSM.view.WtmPankuView', {
             store.setParams({
                 'qm.locationId' : zoneId
             });
-            store.load();
+            store.getProxy().setTimeout(8000);
+            store.load({
+                callback:function(records,operation,success) {
+                    if(success == false) {
+                        if (Ext.os.is('Android')) {
+                            notice('连接异常！',null,'错误','确定');
+                        } else {
+                            Ext.Msg.alert('错误','连接异常！',Ext.emptyFn);
+                        }
+                    }
+                }
+            });
         }
     },
 

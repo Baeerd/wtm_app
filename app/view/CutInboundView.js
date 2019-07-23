@@ -528,6 +528,7 @@ Ext.define('SYSM.view.CutInboundView', {
             Ext.Ajax.request({
                 url:rootUrl+'/mat/mat-material/findByParams.action',
                 method:'POST',
+                timeout : 5000,
                 params: {
                     'qm.matNo':textfield.getValue()
                 },

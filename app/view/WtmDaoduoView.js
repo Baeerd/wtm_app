@@ -204,6 +204,7 @@ Ext.define('SYSM.view.WtmDaoduoView', {
                                                         //     url:'http://192.168.0.112/mes-wtm-app/wtm/inventory-check!saveRecords.action',
                                                         url:rootUrl+'/wtm/wtm-location/matMove.action',
                                                         method:'POST',
+                                                        timeout : 8000,
                                                         params: {
                                                             'matNo' : matId,
                                                             'fromSlotId' : locationId,
@@ -491,6 +492,7 @@ Ext.define('SYSM.view.WtmDaoduoView', {
             Ext.Ajax.request({
                 url:rootUrl+'/wtm/wtm-location/findVoByParams.action',
                 method:'POST',
+                timeout : 8000,
                 params: {
                     'qm.matId':textfield.getValue()
                 },

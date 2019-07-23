@@ -81,6 +81,61 @@ Ext.application({
     ],
     name: 'SYSM',
 
+    init : function() {
+        Ext.override(Ext.data.Store, {
+            initComponent : function() {
+                var me = this;
+                this.callParent(arguments);
+            },
+            listeners : {
+                beforeload : function(store, operation, eOpts) {
+                    store.getProxy().setTimeout(10000);
+                }
+            }
+        });
+
+        Ext.Ajax.on('requestexception', function(conn, response, options) {
+            var contentType = response.getResponseHeader('Content-Type'),
+                location = response.getResponseHeader('Location'),
+                status = response.status;
+            if (response.status == "999") {
+                Ext.Msg.alert('提示信息', '用户会话已过期，请重新登陆！', function() {
+                    var reRoot = Ext.create('SYSM.view.RootNavigationView');//
+                    reRoot.push(Ext.create('SYSM.view.LoginView'));
+                    // root.push(Ext.create('SYSM.view.TestView'));
+                    // root.push(Ext.create('SYSM.view.MenuView'));
+                    Ext.Viewport.add(reRoot);
+                });
+            }else if (response.timedout === true) {
+                Ext.MessageBox.show({
+                    title: '通信故障',
+                    msg: '地址:[' + response.request.url + ']连接超时',
+                    icon: Ext.MessageBox.ERROR,
+                    buttons: Ext.Msg.OK
+                });
+
+            } else {
+                var msgJson = Ext.decode(response.responseText),
+                    emptyMsg = '系统错误,请联系管理员',
+                    msg;
+                if (msgJson && msgJson.meta && msgJson.meta.message) {
+                    msg = msgJson.meta.message;
+                } else {
+                    msg = emptyMsg;
+                }
+                Ext.MessageBox.show({
+                    title: '请求出错',
+                    msg: '地址:[' + response.request.url + ']<br>错误信息:' + msg,
+                    icon: Ext.MessageBox.ERROR,
+                    buttons: Ext.Msg.OK
+                });
+            }
+
+
+        });
+
+    },
+
     launch: function() {
         //rootUrl = 'http://10.4.55.204:7001/mes-wtm-app';
         //rootUrl = 'http://192.168.0.112:8080/mes-wtm-app';

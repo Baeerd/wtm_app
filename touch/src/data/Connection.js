@@ -80,7 +80,7 @@ Ext.define('Ext.data.Connection', {
          * The timeout in milliseconds to be used for requests.
          * @accessor
          */
-        timeout : 30000000,
+        timeout : 8000,
 
         /**
          * @cfg {Object} extraParams
