@@ -16,8 +16,7 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
-  "SYSM": "app",
-  "SYSM.view.WtmPanuk": "app/view/WtmPanku.js"
+  "SYSM": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "Ext.AbstractComponent": [],
@@ -647,6 +646,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "SYSM.model.TargetSelectModel": [],
   "SYSM.model.ThrowMatModel": [],
   "SYSM.model.WAREHOUSEModel": [],
+  "SYSM.model.WtmPankuModel": [],
   "SYSM.store.InventoryCheckStore": [],
   "SYSM.store.MenuDataViewStore": [],
   "SYSM.store.MyDirectStore": [],
@@ -660,12 +660,14 @@ Ext.ClassManager.addNameAlternateMappings({
   "SYSM.store.WAREHOUSEJsonStore": [],
   "SYSM.store.WAREHOUSE_HALLJsonStore": [],
   "SYSM.store.WAREHOUSE_HALL_ZONEJsonStore": [],
+  "SYSM.store.WtmPankuStore": [],
   "SYSM.store.abcStore": [],
   "SYSM.view.BackToLib": [],
   "SYSM.view.CheckSampleView": [],
   "SYSM.view.CutInboundView": [],
   "SYSM.view.EXWarehouseMaterial": [],
   "SYSM.view.EXWarehouseProduct": [],
+  "SYSM.view.EchoSlabCutView": [],
   "SYSM.view.FeedingDetail": [],
   "SYSM.view.FeedingItem": [],
   "SYSM.view.LoginView": [],
@@ -687,7 +689,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "SYSM.view.TestView": [],
   "SYSM.view.UnplanFeedingItem": [],
   "SYSM.view.UnplannedFeeding": [],
-  "SYSM.view.WtmPanuk": [],
+  "SYSM.view.WtmDaoduoView": [],
+  "SYSM.view.WtmPankuView": [],
   "SYSM.view.XS00List": []
 });
 Ext.ClassManager.addNameAliasMappings({
@@ -1415,6 +1418,7 @@ Ext.ClassManager.addNameAliasMappings({
   "SYSM.model.TargetSelectModel": [],
   "SYSM.model.ThrowMatModel": [],
   "SYSM.model.WAREHOUSEModel": [],
+  "SYSM.model.WtmPankuModel": [],
   "SYSM.store.InventoryCheckStore": [],
   "SYSM.store.MenuDataViewStore": [],
   "SYSM.store.MyDirectStore": [],
@@ -1434,6 +1438,7 @@ Ext.ClassManager.addNameAliasMappings({
   "SYSM.store.WAREHOUSEJsonStore": [],
   "SYSM.store.WAREHOUSE_HALLJsonStore": [],
   "SYSM.store.WAREHOUSE_HALL_ZONEJsonStore": [],
+  "SYSM.store.WtmPankuStore": [],
   "SYSM.store.abcStore": [],
   "SYSM.view.BackToLib": [
     "widget.backToLib"
@@ -1449,6 +1454,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "SYSM.view.EXWarehouseProduct": [
     "widget.exWarehouseProduct"
+  ],
+  "SYSM.view.EchoSlabCutView": [
+    "widget.echoSlabCutView"
   ],
   "SYSM.view.FeedingDetail": [
     "widget.feedingDetail"
@@ -1509,8 +1517,11 @@ Ext.ClassManager.addNameAliasMappings({
   "SYSM.view.UnplannedFeeding": [
     "widget.unplannedFeeding"
   ],
-  "SYSM.view.WtmPanuk": [
-    "widget.wtmPanuk"
+  "SYSM.view.WtmDaoduoView": [
+    "widget.wtmDaoduoView"
+  ],
+  "SYSM.view.WtmPankuView": [
+    "widget.wtmPankuView"
   ],
   "SYSM.view.XS00List": [
     "widget.xs00List"

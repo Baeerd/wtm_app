@@ -170,31 +170,9 @@ Ext.define('SYSM.view.MenuView', {
                 targetView = Ext.create('SYSM.view.WtmPankuView');
                 root.push(targetView);
             }
-            //     else if ('扫码倒垛' ===label) {
-            else if ('SL-MOBILE-01' ===label) {
-                targetView = Ext.create('SYSM.view.TargetChangeingView');
-                root.push(targetView);
-            }
-            //             else if ('盘库确认' ===label) {
-            else if ('SL-MOBILE-04' ===label) {
-                targetView = Ext.create('SYSM.view.StoreCheck');
-                root.push(targetView);
-            }
-            //                     else if ('标签核对' ===label) {
-            else if ('SL-MOBILE-06' ===label) {
-                targetView = Ext.create('SYSM.view.TagCheck');
-                root.push(targetView);
-            }
-            //                         else if ('有计划投料' ===label) {
-            else if ('SL-MOBILE-08' ===label) {
-                targetView = Ext.create('SYSM.view.PlannedFeeding');
-                var PlanNumberJsonStore = Ext.getStore('PlanNumberJsonStore');
-                PlanNumberJsonStore.removeAll();
-                Ext.getStore('PlannedFeedingJsonStore').removeAll();
-                root.push(targetView);
-            }
-            else if ('SL-MOBILE-07' ===label) {
-                targetView = Ext.create('SYSM.view.CheckSampleView');
+            //   离线二切
+            else if ('APP_ECHO_SLAB_CUT' ===label) {
+                targetView = Ext.create('SYSM.view.EchoSlabCutView');
                 root.push(targetView);
             }
 

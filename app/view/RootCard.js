@@ -21,6 +21,7 @@ Ext.define('SYSM.view.RootCard', {
         'SYSM.view.MenuView',
         'SYSM.view.CutInboundView',
         'SYSM.view.WtmPankuView',
+        'SYSM.view.EchoSlabCutView',
         'SYSM.view.TargetChangeingView',
         'SYSM.view.EXWarehouseMaterial',
         'SYSM.view.StoreCheck',

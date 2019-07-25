@@ -280,21 +280,9 @@ Ext.define('SYSM.view.LoginView', {
                                     } else if ('APP_PANKU' === items[i].resId) {
                                         nemuStore.add({'image':'resources/images/szxx.png',
                                             'label':items[i].resName,'RES_ID':'APP_PANKU'});
-                                    } else if ('SL-MOBILE-04' === items[i].resId) {
+                                    } else if ('APP_ECHO_SLAB_CUT' === items[i].resId) {
                                         nemuStore.add({'image':'resources/images/pkqr.png',
-                                            'label':items[i].resName,'RES_ID':'SL-MOBILE-04'});
-                                    } else if ('SL-MOBILE-06' === items[i].resId) {
-                                        nemuStore.add({'image':'resources/images/bqbd.png',
-                                            'label':items[i].resName,'RES_ID':'SL-MOBILE-06'});
-                                    } else if ('SL-MOBILE-08' === items[i].resId) {
-                                        nemuStore.add({'image':'resources/images/yjhtl.png',
-                                            'label':items[i].resName,'RES_ID':'SL-MOBILE-08'});
-                                    } else if ('SL-MOBILE-05' === items[i].resId) {
-                                        nemuStore.add({'image':'resources/images/thrk.png',
-                                            'label':items[i].resName,'RES_ID':'SL-MOBILE-05'});
-                                    } else if ('SL-MOBILE-07' === items[i].resId) {
-                                        nemuStore.add({'image':'resources/images/jysy.png',
-                                            'label':items[i].resName,'RES_ID':'SL-MOBILE-07'});
+                                            'label':items[i].resName,'RES_ID':'APP_ECHO_SLAB_CUT'});
                                     }
                                 }
                                 mainInit();

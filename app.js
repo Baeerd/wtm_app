@@ -26,6 +26,7 @@ Ext.application({
     ],
     models: [
         'WtmPankuModel',
+        'EchoSlabCutModel',
         'TargetSelectModel',
         'MenuDataViewModel',
         'WAREHOUSEModel',
@@ -35,6 +36,7 @@ Ext.application({
     ],
     stores: [
         'WtmPankuStore',
+        'EchoSlabCutStore',
         'TargetSelectStore',
         'MenuDataViewStore',
         'WAREHOUSEJsonStore',
@@ -56,6 +58,7 @@ Ext.application({
         'MenuDataItem',
         'CutInboundView',
         'WtmDaoduoView',
+        'EchoSlabCutView',
 
         'RootCard',
         'TargetSelectDialog',
@@ -167,9 +170,9 @@ Ext.application({
             serverName = '';
 
         }
-        // cxapp.sgjtsteel.com:30011
         rootUrl = 'http://cxapp.sgjtsteel.com:30011/';
         // rootUrl = 'http://10.88.248.40:9001/jtlg-app';
+        // rootUrl = 'http://10.99.218.73:8080/jtlg-app';
         console.log('rootUrl = '+rootUrl);
         //rootUrl = http://10.4.55.204:7001/mes-wtm-app
 
